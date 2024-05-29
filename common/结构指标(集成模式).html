@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#32467;&#26500;&#25351;&#26631;(&#38598;&#25104;&#27169;&#24335;) | GAMA&#21345;&#29255;&#25216;&#26415;&#25991;&#26723; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#32467;&#26500;&#25351;&#26631;(&#38598;&#25104;&#27169;&#24335;) | GAMA&#21345;&#29255;&#25216;&#26415;&#25991;&#26723; ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../../Favicon/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="结构指标集成模式">结构指标(集成模式)</h1>
+
+<p>集成常用的结构指标类型。</p>
+<h2 id="输入端inputside">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">接入计算YJK模型卡片中的模型代理。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">总质量</td>
+<td style="text-align: left;">总质量</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">周期</td>
+<td style="text-align: left;">前6阶周期</td>
+<td style="text-align: left;">列表数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">周期比</td>
+<td style="text-align: left;">周期比</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">质量参与系数</td>
+<td style="text-align: left;">第一位：X向质量参与系数,第二位：Y向质量参与系数</td>
+<td style="text-align: left;">列表数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">位移角</td>
+<td style="text-align: left;">位移角</td>
+<td style="text-align: left;">列表数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">位移角工况</td>
+<td style="text-align: left;">位移角工况</td>
+<td style="text-align: left;">列表数据</td>
+<td style="text-align: left;">LoadCaseDef</td>
+</tr>
+<tr>
+<td style="text-align: left;">全楼位移比</td>
+<td style="text-align: left;">全楼最大位移与层平均位移比</td>
+<td style="text-align: left;">列表数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">全楼位移比工况</td>
+<td style="text-align: left;">全楼最大位移与层平均位移比工况</td>
+<td style="text-align: left;">列表数据</td>
+<td style="text-align: left;">LoadCaseDef</td>
+</tr>
+<tr>
+<td style="text-align: left;">层间位移比</td>
+<td style="text-align: left;">全楼最大层间位移与层平均位移比</td>
+<td style="text-align: left;">列表数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">层间位移比工况</td>
+<td style="text-align: left;">全楼最大层间位移与层平均位移比工况</td>
+<td style="text-align: left;">列表数据</td>
+<td style="text-align: left;">LoadCaseDef</td>
+</tr>
+<tr>
+<td style="text-align: left;">抗剪承载力比</td>
+<td style="text-align: left;">抗剪承载力比,第一位为X向，第二位为Y向</td>
+<td style="text-align: left;">列表数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">刚度比</td>
+<td style="text-align: left;">刚度比：第一位：Ratx,第二位：Raty,第三位：Ratx1,第四位：Raty1,第五位：Ratx2,,第六位：Raty2,第七位：嵌固刚度比X,第八位：嵌固刚度比Y</td>
+<td style="text-align: left;">列表数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">倾覆力矩</td>
+<td style="text-align: left;">第一位：X水平地震抗倾覆力矩与倾覆力矩比值,第二位：Y水平地震抗倾覆力矩与倾覆力矩比值,第三位：X风载正吹抗倾覆力矩与倾覆力矩比值,第四位：Y风载正吹抗倾覆力矩与倾覆力矩比值</td>
+<td style="text-align: left;">列表数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">零应力区</td>
+<td style="text-align: left;">第一位：X水平地震零应力区,第二位：Y水平地震零应力区,第三位：X风载正吹零应力区,第四位：Y风载正吹零应力区</td>
+<td style="text-align: left;">列表数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">倾覆力矩百分比(轴力方式)</td>
+<td style="text-align: left;">倾覆力矩百分比:第一位：X向框架地震倾覆力矩百分比(轴力方式),第二位:Y向框架地震倾覆力矩百分比(轴力方式),第三位：X向短肢剪力墙地震倾覆力矩百分比(轴力方式),第四位：Y向短肢剪力墙地震倾覆力矩百分比(轴力方式),</td>
+<td style="text-align: left;">列表数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">剪重比</td>
+<td style="text-align: left;">第一位：X向剪重比,第二位：Y向剪重比</td>
+<td style="text-align: left;">列表数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">刚重比</td>
+<td style="text-align: left;">第一位：地震工况下的刚重比X,第二位：地震工况下的刚重比Y,第三位：风工况下的刚重比X,第四位：风工况下的刚重比X</td>
+<td style="text-align: left;">列表数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">材料用量</td>
+<td style="text-align: left;">第一位：混凝土用量,第二位：型钢用量,第三位：钢筋用量</td>
+<td style="text-align: left;">列表数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h2 id="示例">示例</h2>
+<p><img src="../file/%E7%BB%93%E6%9E%84%E6%8C%87%E6%A0%87(%E9%9B%86%E6%88%90%E6%A8%A1%E5%BC%8F)_01.png" alt="示例文件:结构指标(集成模式)_01.png"></p>
+<p><a href="../file/%E7%BB%93%E6%9E%84%E6%8C%87%E6%A0%87(%E9%9B%86%E6%88%90%E6%A8%A1%E5%BC%8F)_01.pgz">示例文件:结构指标(集成模式)_01.pgz</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) 非解构数字科技有限公司
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

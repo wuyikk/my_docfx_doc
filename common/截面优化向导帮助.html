@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#25130;&#38754;&#20248;&#36873;&#21521;&#23548;&#24110;&#21161; | GAMA&#21345;&#29255;&#25216;&#26415;&#25991;&#26723; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#25130;&#38754;&#20248;&#36873;&#21521;&#23548;&#24110;&#21161; | GAMA&#21345;&#29255;&#25216;&#26415;&#25991;&#26723; ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../../Favicon/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="截面优选向导帮助">截面优选向导帮助</h1>
+
+<h2 id="一启动向导">（一）启动向导</h2>
+<p>可以通过点击【数智设计】选项卡下的“<strong>截面优选</strong>”按钮来启动截面优选向导：</p>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20231108104329742-1699411427241-2.png" alt="image-20231108104329742"></p>
+<h2 id="二流程简介">（二）流程简介</h2>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20231108105200189.png" alt="image-20231108105200189"></p>
+<p>截面优选是一种以构件承载力为目标，同时以构件层面不发生超限为约束条件的“满应力”迭代计算方法。该方法适用于多种场景，如地库主次梁的优选、钢梁应力比调整、高层结构柱墙轴压比的调整等。在截面优选中，只需针对不同的构件设置相应的目标（如应力比、配筋率等），然后启动盈建科程序进行计算，并输出材料用量以及记录结构指标的变化。整个过程无需人工干预，极大的提高了设计效率。</p>
+<p>截面优选向导的整个使用流程大致为：</p>
+<p>​       (1) 选择优选问题类型</p>
+<p>​       (2) 选择要修改的构件</p>
+<p>​       (3) 为构件组设置候选截面</p>
+<p>​       (4) 为优选问题设置约束与目标</p>
+<p>​       (5) 设置记录指标</p>
+<p>​       (6) 设置计算参数</p>
+<p>点击<strong>启动</strong>按钮或双击<strong>构件指标优选器</strong>卡片进入启动截面，开始优选。</p>
+<h2 id="三操作流程">（三）操作流程</h2>
+<p>Y-GAMA 3.0 版本目前提供了包括砼梁、钢梁、砼柱和斜撑、钢柱和斜撑、墙、空间钢结构在内的六种截面优选问题解决方案。</p>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20231108105547426.png" alt="image-20231108105547426"></p>
+<p>用户在一次截面优选中可以同时添加多个构件组，构件组可以设置不同的目标或优选问题。</p>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20231108105846000.png" alt="image-20231108105846000"></p>
+<h3 id="1-混凝土梁截面优选问题"><strong>1.</strong> 混凝土梁截面优选问题</h3>
+<h4 id="11--选择构件">1.1  选择构件</h4>
+<p>双击“混凝土梁截面优化” 按钮，打开混凝土梁构件组设置截面。选择需要调整的构件，软件提供了“点选”、“读取分组”、一键添加主次梁等多种选择构件的方式。</p>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20231108110220434.png" alt="image-20231108110220434"></p>
+<h4 id="12--候选截面设置">1.2  候选截面设置</h4>
+<h5 id="121-批量添加截面"><strong>1.2.1 批量添加截面</strong></h5>
+<p>点击“ + 批量添加截面”，程序将按照用户给定的生成规则生成截面；</p>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20230420172902019.png" alt="image-20230420172902019"></p>
+<h5 id="122-添加一个候选截面"><strong>1.2.2 添加一个候选截面</strong></h5>
+<p>点击“ + 添加一个截面”，可手动输入截面名称及尺寸；</p>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20230605173932756.png" alt="image-20230605173932756"></p>
+<h5 id="123-其他候选截面添加方式">1.2.3 其他候选截面添加方式</h5>
+<p>点击“ + 读取模型截面”，可读取YJK中已有的截面类型；</p>
+<p>点击“ + 从其他构件组导入”，可导入其他同类型优选问题构件组的候选截面表。</p>
+<h4 id="13--目标与约束设置">1.3  目标与约束设置</h4>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20231108112951437.png" alt="image-20231108112951437"></p>
+<p><strong>① 范围配筋率:</strong></p>
+<p>将构件尽可能得调整到配筋率范围内。</p>
+<p><strong>② 目标配筋率：</strong></p>
+<p>将构件尽可能得调整到目标配筋率附近。 “<strong>±0</strong>“表示配筋率容许值。</p>
+<p><strong>③ 只调超过上述限值的构件：</strong></p>
+<p>每一代优化时，只会处理超过限值的构件。<strong>超过限值</strong> 指超过YJK指标的构件以及超过用户设定范围上限的构件。</p>
+<p><strong>④ 所选梁优选时截面一致：</strong></p>
+<p>截面优选默认寻找单跨最优解，即一跨一个截面；若希望一组内的截面保持一致，可以勾选<img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20230606144625510.png" alt="image-20230606144625510">选项。</p>
+<p><strong>⑤ 考虑成本：</strong></p>
+<p>当选择<strong>范围配筋率</strong>时，优先将构件调整到范围配筋率之内，再考虑范围内最经济的截面。</p>
+<p>当选择<strong>目标配筋率</strong>时，优先将构件调整到目标配筋率附近， 在考虑容许范围内最经济的截<strong>面。</strong></p>
+<p><strong>⑥ 只调梁高/梁宽</strong>：</p>
+<p>在优选过程中，只根据候选截面调整构件组内梁的高度\宽度。</p>
+<p><strong>⑦ 验算荷载组合选项：</strong></p>
+<p>对候选截面内力预测时，只验算最不利组合还是验算所有组合。只验算最不利荷载组合所需时间更短。</p>
+<p><strong>⑧ 其他说明：</strong></p>
+<p>如果截面库里的所有截面都不满足尺寸约束要求，会保持原截面；</p>
+<p>在调整配筋率时，会同时调整抗剪、剪扭等超限；优先满足没有超限，其次满足配筋率限值。</p>
+<h4 id="14--指标记录与计算设置">1.4  指标记录与计算设置</h4>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20231108142652959.png" alt="image-20231108142652959"></p>
+<h5 id="141-指标类型"><strong>1.4.1 指标类型</strong></h5>
+<p>设置记录项的目的，是为记录截面尺寸改变对工程整体指标的影响。可以选择质量、材料用量、周期、位移、刚度比、剪重比、刚重比、抗剪承载力比、抗倾覆力矩、0.2V0等整体指标进行记录。</p>
+<p>其中，如果选择了材料用量，并同时选择了记录**“钢筋总用量”<strong>，则程序会自动绘制一遍施工图。如果需要按照特定的参数绘制施工图并统计钢筋，可以预设施工图参数，并点击</strong>“存为默认”**。以梁施工图为例，如下：</p>
+<p>统计钢筋用量会导致计算时间大幅增加，非必要时不建议统计钢筋用量。</p>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20230413181652970.png" alt="image-20230413181652970"></p>
+<h5 id="142-模型计算设置"><strong>1.4.2 模型计算设置</strong></h5>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20231108142915750.png" alt="image-20231108142915750"></p>
+<p><strong>① 计算板配筋</strong></p>
+<p>取消勾选此项可以提高计算速度，但钢筋总用量中将不再包含板钢筋用量。</p>
+<p><strong>② 文件保存方式</strong></p>
+<p>计算结果文件占用磁盘空间较大，当模型迭代次数较多时，不建议勾选“保留所有”方式进行优选。对于单次计算耗时较长的模型，建议采用保留N个最优模型的方式。</p>
+<p>模型建模文件占用磁盘空间较小，除特殊情况外，建议保留所有建模文件。</p>
+<p><strong>③ 模型计算方式</strong></p>
+<p>截面优选会跟进记录项内容自动判断选择计算模式，因此可以不进行修改。在此仅对各记录项做一个介绍。</p>
+<p><strong>只计算</strong>：同YJK的只计算模式，即只算内力，不配筋。</p>
+<p>**计算设计：**同YJK计算设计，在计算的基础上，进行配筋。</p>
+<p>**计算设计工程量：**在上述条件下，额外统计工程量。</p>
+<p>**计算设计工程量含钢筋：**在上述条件下，额外统计钢筋用量。关于钢筋用量的统计说明，可以参考“①指标类型”中的对应项。</p>
+<h5 id="143-启动计算">1.4.3 启动计算</h5>
+<p>点击“确认并进入优选窗口”按钮，将在画布上创建卡片并打开构件截面优化窗口，迭代计算与结果部分请参考  [“（四） 迭代与结果  ”](#<strong>（四）</strong>  迭代与结果  )。</p>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20231108143442445.png" alt="image-20231108143442445"></p>
+<h3 id="2-钢梁截面优选问题"><strong>2. 钢梁截面优选问题</strong></h3>
+<h4 id="21-选择构件">2.1 选择构件</h4>
+<p>同  [“1.1  选择构件  ”](#1.1  选择构件  )部分内容。</p>
+<h4 id="22--候选截面设置"><strong>2.2  候选截面设置</strong></h4>
+<h5 id="221-批量添加截面"><strong>2.2.1</strong> 批量添加截面</h5>
+<p>点击“ + 批量添加截面”，程序将按照用户给定的生成规则生成截面；</p>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20230420184638336.png" alt="image-20230420184638336"></p>
+<h5 id="222-批量添加型钢截面">2.2.2 批量添加型钢截面</h5>
+<p>点击“ + 添加型钢截面”，程序将弹出型钢选择对话框，此对话框支持多选，多选后点击“确认”可以批量添加多个型钢截面。</p>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20230420185024085.png" alt="image-20230420185024085"></p>
+<h5 id="223-添加一个候选截面">2.2.3 添加一个候选截面</h5>
+<p>点击“ + 添加一个截面”，可手动输入截面名称及尺寸；</p>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20230605174518033.png" alt="image-20230605174518033"></p>
+<h5 id="224-其他候选截面添加方式">2.2.4 其他候选截面添加方式</h5>
+<p>点击“ + 读取模型截面”，可读取YJK中已有的截面类型；</p>
+<p>点击“ + 从其他构件组导入”，可导入其他同类型优选问题构件组的候选截面表；</p>
+<h4 id="23-目标与约束设置">2.3 目标与约束设置</h4>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20231108144803608.png" alt="image-20231108144803608"></p>
+<p><strong>① 应力比限值:</strong></p>
+<p>取值在0~1之间，大于限值认定为超限。对于组合梁的“承载力之比”也会进行调整。</p>
+<p><strong>② 只调超过限值的构件:</strong></p>
+<p>勾选时，在迭代过程中只会调整超过应力比限值的构件，或高厚比、宽厚比等超限的构件，其他构件的截面保持不变。</p>
+<p>不勾选时，所有选择的构件截面均会向接近应力比限值调整，并尽可能保证不超过限值。</p>
+<p><strong>③ 所选梁优选时截面一致:</strong></p>
+<p>若希望一组内的截面保持一致，可以勾选此选项。</p>
+<p><strong>④ 考虑成本：</strong></p>
+<p>优先将构件调整到满足应力比限值的情况，再考虑范围内面积最小的截面。</p>
+<p><strong>⑤ 次梁高度不超过主梁</strong></p>
+<p>勾选时，优选的次梁截面将始终保持高度小于其支座的主梁。</p>
+<p><strong>⑥ 验算荷载组合选项：</strong></p>
+<p>对候选截面内力预测时，只验算最不利组合还是验算所有组合。只验算最不利荷载组合所需时间更短。</p>
+<h4 id="24-指标记录与计算设置">2.4 指标记录与计算设置</h4>
+<p>同  [“1.4  指标记录与计算设置  ”](#1.4  指标记录与计算设置  )部分内容。</p>
+<h3 id="3柱和斜撑截面优选问题轴压比控制">3.<strong>柱和斜撑截面优选问题</strong>（轴压比控制）</h3>
+<h4 id="31-选择构件">3.1 选择构件</h4>
+<p>同  [“1.1  选择构件  ”](#1.1  选择构件  )部分内容。</p>
+<h4 id="32-候选截面设置"><strong>3.2 候选截面设置</strong></h4>
+<h5 id="321批量添加候选截面"><strong>3.2.1</strong>批量添加候选截面</h5>
+<p>点击“ + 批量添加截面”，程序将按照用户给定的生成规则生成截面；</p>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20230421145838965.png" alt="image-20230421145838965"></p>
+<h5 id="322添加一个候选截面"><strong>3.2.2</strong>添加一个候选截面</h5>
+<p>点击“ + 添加一个截面”，可手动输入截面名称及尺寸；<img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20230605174205187.png" alt="image-20230605174205187"></p>
+<h5 id="323-其他候选截面添加方式">3.2.3 其他候选截面添加方式</h5>
+<p>点击“ + 读取模型截面”，可读取YJK中已有的截面类型；</p>
+<p>点击“ + 从其他构件组导入”，可导入其他同类型优选问题构件组的候选截面表。</p>
+<h4 id="33-目标与约束设置">3.3 目标与约束设置</h4>
+<p>在优选问题选择为柱截面优选（轴压比控制），或者斜撑截面优选（轴压比控制）时，可设置的详细约束为轴压比限值差值和每层截面组数。</p>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20231108150122681.png" alt="image-20231108150122681"></p>
+<p><strong>① 轴压比限值差值:</strong></p>
+<p>本优选方法将使结果尽量贴近目标轴压比限值，此处输入值可使结果保证余量。</p>
+<p>​      **实际轴压比限值 = ** 规范轴压比限值 - 输入值</p>
+<p><strong>② 每层截面组数:</strong></p>
+<p>对所选构件中同一标准层的构件进行截面归并时的分组组数，设置为0时不进行分组。</p>
+<p><strong>③ 只调超过限值的构件：</strong></p>
+<p>每一代优选时，只会处理超过限值的构件。**超过限值 **指超过YJK指标的构件以及超过用户设定的应力比限值的构件。</p>
+<p><strong>④ 上柱截面不超过下柱：</strong></p>
+<p>优化时，上层柱子的尺寸不超过底部相连的下层柱子的尺寸（简单对比高宽或直径）。</p>
+<h4 id="34-指标记录与计算设置">3.4 指标记录与计算设置</h4>
+<p>同  [“1.4  指标记录与计算设置  ”](#1.4  指标记录与计算设置  )部分内容。</p>
+<h3 id="4钢柱和斜撑截面优选问题应力度控制">4.钢柱和斜撑截面优选问题（应力度控制）</h3>
+<h4 id="41-构件选择">4.1 构件选择</h4>
+<p>同  [“1.1  选择构件  ”](#1.1  选择构件  )部分内容。</p>
+<h4 id="42-候选截面设置">4.2 候选截面设置</h4>
+<p>同  [“2.2  候选截面设置 ”](#2.2  候选截面设置  )部分内容。</p>
+<h4 id="43-目标与约束设置">4.3 目标与约束设置</h4>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20231108152312843.png" alt="image-20231108152312843"></p>
+<p><strong>① 应力比限值：</strong></p>
+<p>将构件尽可能得调整到不大于且最接近各应力比限值的截面。</p>
+<p><strong>② 只调超过限值的构件：</strong></p>
+<p>每一代优化时，只会处理超过限值的构件。<strong>超过限值</strong> 指超过YJK指标的构件以及超过用户设定的应力比限值的构件。</p>
+<p><strong>③ 所选梁优选时截面一致:</strong></p>
+<p>若希望一组内的截面保持一致，可以勾选此选项。</p>
+<p><strong>④ 考虑成本：</strong></p>
+<p>优先将构件调整到满足应力比限值的情况，再考虑范围内面积最小的截面。</p>
+<p><strong>⑤ 次梁高度不超过主梁：</strong></p>
+<p>优化时，次梁高度不超过相邻的主梁高度。</p>
+<p><strong>⑥ 验算荷载组合选项：</strong></p>
+<p>对候选截面内力预测时，只验算最不利组合还是验算所有组合。只验算最不利荷载组合所需时间更短</p>
+<p><strong>⑦ 其他说明：</strong></p>
+<p>如果截面库里的所有截面都不满足尺寸约束要求，会保持原截面。</p>
+<h4 id="44-指标记录与计算设置">4.4 指标记录与计算设置</h4>
+<p>同  [“1.4  指标记录与计算设置  ”](#1.4  指标记录与计算设置  )部分内容。</p>
+<h3 id="5剪力墙截面优选问题">5.<strong>剪力墙截面优选问题</strong></h3>
+<h4 id="51-构件选择">5.1 构件选择</h4>
+<p>同  [“1.1  选择构件  ”](#1.1  选择构件  )部分内容。</p>
+<h4 id="52-候选截面设置">5.2 候选截面设置</h4>
+<h5 id="521批量添加候选截面">5.2.1<strong>批量添加候选截面</strong></h5>
+<p>点击“ + 批量添加截面”，程序将按照用户给定的生成规则生成截面，目前仅支持矩形截面；</p>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20230421152731338.png" alt="image-20230421152731338"></p>
+<h5 id="522-添加一个候选截面">5.2.2 添加一个候选截面</h5>
+<p>点击“ + 添加一个截面”，可手动输入截面名称及尺寸；</p>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20230609182016066.png" alt="image-20230609182016066"></p>
+<h5 id="523其他候选截面添加方式">5.2.3其他候选截面添加方式</h5>
+<p>点击“ + 读取模型截面”，可读取盈建科中已有的截面类型；</p>
+<p>点击“ + 从其他构件组导入”，可导入其他同类型优选问题构件组的候选截面表。</p>
+<h4 id="53-目标与约束设置">5.3 目标与约束设置</h4>
+<p>剪力墙截面优选（轴压比控制），与“柱和斜撑截面优选问题”操作类似，请参考  [“3.3 目标与约束设置  ”](#3.3 目标与约束设置  )。</p>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20231108150309592.png" alt="image-20231108150309592"></p>
+<h4 id="54-指标记录与计算设置">5.4 指标记录与计算设置</h4>
+<p>同  [“1.4  指标记录与计算设置  ”](#1.4  指标记录与计算设置  )部分内容。</p>
+<h3 id="6-空间钢结构截面优选问题">6. <strong>空间钢结构截面优选问题</strong></h3>
+<p>新增空间钢结构的截面优选问题，可以同时优化空间钢结构中的梁、柱、斜撑构件。【空间钢结构的截面优选】操作流程与【钢梁截面优选问题】、【钢柱、斜撑截面优选问题（应力度控制）】操作流程相似，请参考前文相关内容。</p>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20231108153539086.png" alt="image-20231108153539086"></p>
+<h2 id="四--迭代与结果"><strong>（四）</strong>  迭代与结果</h2>
+<h3 id="1最大迭代次数">1.最大迭代次数</h3>
+<ul>
+<li>在迭代过程中直接修改最大迭代次数，并点击“更新迭代次数”按钮，可以修改截面优选的最大迭代次数。</li>
+<li>如果代数达到最大值仍未能完成所有截面的优选时，截面优选将暂停优化，此时重新输入最大迭代次数并点击“继续优化”按钮，软件将会继续进行截面优选。</li>
+</ul>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20230606110622588.png" alt="image-20230606110622588"></p>
+<h3 id="2暂停优化">2.暂停优化</h3>
+<ul>
+<li>当用于计算的第二盈建科软件长时间处于未响应状态时，点击 “暂停优化” 按钮后关闭第二盈建科软件，再点击“继续优化”按钮。此时GAMA可重新调用第二盈建科，解决主程序崩溃问题。</li>
+<li>点击暂停优化按钮，并保存pgz文件，可以在下次打开pgz文件时继续进行截面优选。</li>
+</ul>
+<h3 id="3结果查看与文件保存">3.结果查看与文件保存</h3>
+<ul>
+<li>计算结果文件自动保存在原模型的 SectionOptExcel 文件夹下，点击“打开Excel保存文件夹”按钮可以打开该文件夹。</li>
+<li>点击“保存当前表格到文件”按钮，将计算结果另存。</li>
+</ul>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20231108151203820.png" alt="image-20231108151203820"></p>
+<ul>
+<li>迭代模型被生成在原模型根目录下，原模型文件已被更新为最后一代模型。</li>
+<li>初始模型数据在“备份模型” 文件夹下可以找到。</li>
+</ul>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20230606173648501.png" alt="image-20230606173648501"></p>
+<h2 id="五--再次编辑和保存读取">（五）  再次编辑和保存读取</h2>
+<h3 id="1再次打开优选向导或启动优选">1.<strong>再次打开优选向导或启动优选</strong></h3>
+<p>当我们完成截面优选向导设置之后，会回到Y-GAMA模块的画布上，双击鼠标滚轮中键，即可以看到由“截面优选向导”自动创建的一系列卡片。</p>
+<p><strong>再次打开截面优选向导，<strong>双击画布中的</strong>截面优选向导卡片</strong>即可，之前设置的优选问题均会保存在内。</p>
+<p><strong>再次启动截面优选</strong>，双击画布中的<strong>构件指标优选器卡片</strong>即可。</p>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20230413184052404.png" alt="image-20230413184052404"></p>
+<h3 id="2-优选参数保存和读取"><strong>2.</strong> <strong>优选参数保存和读取</strong></h3>
+<p>当弹出画布界面后，截面优选参数均会保存在卡片组中。也就是说，只需保存画布上该文件（扩展名为.pgz），再次打开Y-GAMA时，通过画布读入对应的.pgz文件即可获取所有的数据。</p>
+<p><img src="../file/%E6%88%AA%E9%9D%A2%E4%BC%98%E5%8C%96%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20230605163722298.png" alt="image-20230605163722298"></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) 非解构数字科技有限公司
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

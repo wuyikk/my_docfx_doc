@@ -1,0 +1,5836 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#65288;&#25351;&#26631;&#31867;&#22411;-&#33410;&#28857;&#20301;&#31227;&#65289; | GAMA&#21345;&#29255;&#25216;&#26415;&#25991;&#26723; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#65288;&#25351;&#26631;&#31867;&#22411;-&#33410;&#28857;&#20301;&#31227;&#65289; | GAMA&#21345;&#29255;&#25216;&#26415;&#25991;&#26723; ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../../Favicon/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="指标类型-节点位移">（指标类型-节点位移）</h1>
+
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">节点</td>
+<td style="text-align: left;">节点</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Point3d</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">工况</td>
+<td style="text-align: left;">工况</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">String</td>
+</tr>
+<tr>
+<td style="text-align: left;">位移X</td>
+<td style="text-align: left;">位移X</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">位移Y</td>
+<td style="text-align: left;">位移Y</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">位移Z</td>
+<td style="text-align: left;">位移Z</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">位移Rx</td>
+<td style="text-align: left;">位移Rx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">位移Ry</td>
+<td style="text-align: left;">位移Ry</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">位移Rz</td>
+<td style="text-align: left;">位移Rz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-梁内力">（指标类型-梁内力）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-1">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-1">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">内力</td>
+<td style="text-align: left;">内力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFrameForceResult</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-混凝土梁配筋">（指标类型-混凝土梁配筋）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-2">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-2">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">顶筋面积</td>
+<td style="text-align: left;">顶筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">顶筋计算面积</td>
+<td style="text-align: left;">顶筋计算面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">顶筋配筋率</td>
+<td style="text-align: left;">顶筋配筋率</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">顶筋组合号</td>
+<td style="text-align: left;">顶筋组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Int32</td>
+</tr>
+<tr>
+<td style="text-align: left;">底筋面积</td>
+<td style="text-align: left;">底筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">底筋计算面积</td>
+<td style="text-align: left;">底筋计算面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">底筋配筋率</td>
+<td style="text-align: left;">底筋配筋率</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">底筋组合号</td>
+<td style="text-align: left;">底筋组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Int32</td>
+</tr>
+<tr>
+<td style="text-align: left;">箍筋面积</td>
+<td style="text-align: left;">箍筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">箍筋计算面积</td>
+<td style="text-align: left;">箍筋计算面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">箍筋配筋率</td>
+<td style="text-align: left;">箍筋配筋率</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">箍筋组合号</td>
+<td style="text-align: left;">箍筋组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Int32</td>
+</tr>
+<tr>
+<td style="text-align: left;">受扭箍筋面积</td>
+<td style="text-align: left;">受扭箍筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">受扭纵筋面积</td>
+<td style="text-align: left;">受扭纵筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">计算受扭纵筋面积</td>
+<td style="text-align: left;">计算受扭纵筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">顶筋Fx</td>
+<td style="text-align: left;">顶筋Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">顶筋Fy</td>
+<td style="text-align: left;">顶筋Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">顶筋Fz</td>
+<td style="text-align: left;">顶筋Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">顶筋Mx</td>
+<td style="text-align: left;">顶筋Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">顶筋My</td>
+<td style="text-align: left;">顶筋My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">顶筋Mz</td>
+<td style="text-align: left;">顶筋Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">底筋Fx</td>
+<td style="text-align: left;">底筋Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">底筋Fy</td>
+<td style="text-align: left;">底筋Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">底筋Fz</td>
+<td style="text-align: left;">底筋Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">底筋Mx</td>
+<td style="text-align: left;">底筋Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">底筋My</td>
+<td style="text-align: left;">底筋My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">底筋My</td>
+<td style="text-align: left;">底筋My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">箍筋Fx</td>
+<td style="text-align: left;">箍筋Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">箍筋Fy</td>
+<td style="text-align: left;">箍筋Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">箍筋Fz</td>
+<td style="text-align: left;">箍筋Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">箍筋Mx</td>
+<td style="text-align: left;">箍筋Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">箍筋My</td>
+<td style="text-align: left;">箍筋My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">箍筋Mz</td>
+<td style="text-align: left;">箍筋Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-型钢梁应力度">（指标类型-型钢梁应力度）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-3">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-3">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">上截面强度计算应力</td>
+<td style="text-align: left;">上截面强度计算应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">上截面强度允许应力</td>
+<td style="text-align: left;">上截面强度允许应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">上截面强度组合号</td>
+<td style="text-align: left;">上截面强度组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">下截面强度计算应力</td>
+<td style="text-align: left;">下截面强度计算应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">下截面强度允许应力</td>
+<td style="text-align: left;">下截面强度允许应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">下截面强度组合号</td>
+<td style="text-align: left;">下截面强度组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">上截面稳定计算应力</td>
+<td style="text-align: left;">上截面稳定计算应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">上截面稳定允许应力</td>
+<td style="text-align: left;">上截面稳定允许应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">上截面稳定组合号</td>
+<td style="text-align: left;">上截面稳定组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">下截面稳定计算应力</td>
+<td style="text-align: left;">下截面稳定计算应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">下截面稳定允许应力</td>
+<td style="text-align: left;">下截面稳定允许应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">下截面稳定组合号</td>
+<td style="text-align: left;">下截面稳定组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">抗剪强度计算应力</td>
+<td style="text-align: left;">抗剪强度计算应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">抗剪强度允许应力</td>
+<td style="text-align: left;">抗剪强度允许应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">抗剪强度组合号</td>
+<td style="text-align: left;">抗剪强度组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">上截面强度X剪力</td>
+<td style="text-align: left;">上截面强度X剪力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">上截面强度Y剪力</td>
+<td style="text-align: left;">上截面强度Y剪力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">上截面强度轴力</td>
+<td style="text-align: left;">上截面强度轴力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">上截面强度X弯矩</td>
+<td style="text-align: left;">上截面强度X弯矩</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">上截面强度Y弯矩</td>
+<td style="text-align: left;">上截面强度Y弯矩</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">上截面强度扭矩</td>
+<td style="text-align: left;">上截面强度扭矩</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">下截面强度X剪力</td>
+<td style="text-align: left;">下截面强度X剪力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">下截面强度Y剪力</td>
+<td style="text-align: left;">下截面强度Y剪力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">下截面强度轴力</td>
+<td style="text-align: left;">下截面强度轴力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">下截面强度X弯矩</td>
+<td style="text-align: left;">下截面强度X弯矩</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">下截面强度Y弯矩</td>
+<td style="text-align: left;">下截面强度Y弯矩</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">下截面强度扭矩</td>
+<td style="text-align: left;">下截面强度扭矩</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">上截面稳定X剪力</td>
+<td style="text-align: left;">上截面稳定X剪力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">上截面稳定Y剪力</td>
+<td style="text-align: left;">上截面稳定Y剪力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">上截面稳定轴力</td>
+<td style="text-align: left;">上截面稳定轴力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">上截面稳定X弯矩</td>
+<td style="text-align: left;">上截面稳定X弯矩</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">上截面稳定Y弯矩</td>
+<td style="text-align: left;">上截面稳定Y弯矩</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">上截面稳定扭矩</td>
+<td style="text-align: left;">上截面稳定扭矩</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">下截面稳定X剪力</td>
+<td style="text-align: left;">下截面稳定X剪力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">下截面稳定Y剪力</td>
+<td style="text-align: left;">下截面稳定Y剪力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">下截面稳定轴力</td>
+<td style="text-align: left;">下截面稳定轴力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">下截面稳定X弯矩</td>
+<td style="text-align: left;">下截面稳定X弯矩</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">下截面稳定Y弯矩</td>
+<td style="text-align: left;">下截面稳定Y弯矩</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">下截面稳定扭矩</td>
+<td style="text-align: left;">下截面稳定扭矩</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">抗剪强度X剪力</td>
+<td style="text-align: left;">抗剪强度X剪力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">抗剪强度Y剪力</td>
+<td style="text-align: left;">抗剪强度Y剪力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">抗剪强度轴力</td>
+<td style="text-align: left;">抗剪强度轴力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">抗剪强度X弯矩</td>
+<td style="text-align: left;">抗剪强度X弯矩</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">抗剪强度Y弯矩</td>
+<td style="text-align: left;">抗剪强度Y弯矩</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">抗剪强度扭矩</td>
+<td style="text-align: left;">抗剪强度扭矩</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-梁超限信息">（指标类型-梁超限信息）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-4">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-4">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件类型</td>
+<td style="text-align: left;">构件类型</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">ElementType</td>
+</tr>
+<tr>
+<td style="text-align: left;">超限信息</td>
+<td style="text-align: left;">超限信息</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSLimitationInfo</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-梁宽厚比">（指标类型-梁宽厚比）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-5">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-5">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">宽厚比</td>
+<td style="text-align: left;">宽厚比</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">宽厚比限值</td>
+<td style="text-align: left;">宽厚比限值</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">高厚比</td>
+<td style="text-align: left;">高厚比</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">高厚比限值</td>
+<td style="text-align: left;">高厚比限值</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">外伸受压翼缘正则化宽厚比</td>
+<td style="text-align: left;">外伸受压翼缘正则化宽厚比</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">外伸受压翼缘正则化宽厚比限值</td>
+<td style="text-align: left;">外伸受压翼缘正则化宽厚比限值</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-梁基本荷载组合">（指标类型-梁基本荷载组合）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-6">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-6">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">内力</td>
+<td style="text-align: left;">内力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFrameForceResult</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-梁标准荷载组合">（指标类型-梁标准荷载组合）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-7">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-7">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">内力</td>
+<td style="text-align: left;">内力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFrameForceResult</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-梁剪压比">（指标类型-梁剪压比）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-8">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-8">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">剪压比</td>
+<td style="text-align: left;">剪压比</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">剪压比限值</td>
+<td style="text-align: left;">剪压比限值</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-梁局部坐标轴">（指标类型-梁局部坐标轴）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-9">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-9">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">平面</td>
+<td style="text-align: left;">平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-梁裂缝挠度">（指标类型-梁裂缝挠度）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-10">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-10">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">跨中上表面裂缝</td>
+<td style="text-align: left;">跨中上表面裂缝</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">跨中下表面裂缝</td>
+<td style="text-align: left;">跨中下表面裂缝</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">左支座上表面裂缝</td>
+<td style="text-align: left;">左支座上表面裂缝</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">右支座上表面裂缝</td>
+<td style="text-align: left;">右支座上表面裂缝</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">挠度</td>
+<td style="text-align: left;">挠度</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">挠度限值</td>
+<td style="text-align: left;">挠度限值</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-柱内力">（指标类型-柱内力）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-11">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-11">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">内力</td>
+<td style="text-align: left;">内力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFrameForceResult</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-混凝土柱配筋">（指标类型-混凝土柱配筋）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-12">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-12">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">角筋</td>
+<td style="text-align: left;">角筋</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X纵筋配筋面积</td>
+<td style="text-align: left;">X纵筋配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X纵筋计算配筋面积</td>
+<td style="text-align: left;">X纵筋计算配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X纵筋组合号</td>
+<td style="text-align: left;">X纵筋组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y纵筋配筋面积</td>
+<td style="text-align: left;">Y纵筋配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y纵筋计算配筋面积</td>
+<td style="text-align: left;">Y纵筋计算配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y纵筋组合号</td>
+<td style="text-align: left;">Y纵筋组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X箍筋配筋面积</td>
+<td style="text-align: left;">X箍筋配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X箍筋计算配筋面积</td>
+<td style="text-align: left;">X箍筋计算配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X箍筋组合号</td>
+<td style="text-align: left;">X箍筋组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y箍筋配筋面积</td>
+<td style="text-align: left;">Y箍筋配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y箍筋计算配筋面积</td>
+<td style="text-align: left;">Y箍筋计算配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y箍筋组合号</td>
+<td style="text-align: left;">Y箍筋组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X纵筋设计内力Fx</td>
+<td style="text-align: left;">X纵筋设计内力Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X纵筋设计内力Fy</td>
+<td style="text-align: left;">X纵筋设计内力Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X纵筋设计内力Fz</td>
+<td style="text-align: left;">X纵筋设计内力Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X纵筋设计内力Mx</td>
+<td style="text-align: left;">X纵筋设计内力Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X纵筋设计内力My</td>
+<td style="text-align: left;">X纵筋设计内力My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X纵筋设计内力Mz</td>
+<td style="text-align: left;">X纵筋设计内力Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y纵筋设计内力Fx</td>
+<td style="text-align: left;">Y纵筋设计内力Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y纵筋设计内力Fy</td>
+<td style="text-align: left;">Y纵筋设计内力Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y纵筋设计内力Fz</td>
+<td style="text-align: left;">Y纵筋设计内力Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y纵筋设计内力Mx</td>
+<td style="text-align: left;">Y纵筋设计内力Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y纵筋设计内力My</td>
+<td style="text-align: left;">Y纵筋设计内力My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y纵筋设计内力Mz</td>
+<td style="text-align: left;">Y纵筋设计内力Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X箍筋设计内力Fx</td>
+<td style="text-align: left;">X箍筋设计内力Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X箍筋设计内力Fy</td>
+<td style="text-align: left;">X箍筋设计内力Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X箍筋设计内力Fz</td>
+<td style="text-align: left;">X箍筋设计内力Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X箍筋设计内力Mx</td>
+<td style="text-align: left;">X箍筋设计内力Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X箍筋设计内力My</td>
+<td style="text-align: left;">X箍筋设计内力My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X箍筋设计内力Mz</td>
+<td style="text-align: left;">X箍筋设计内力Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y箍筋设计内力Fx</td>
+<td style="text-align: left;">Y箍筋设计内力Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y箍筋设计内力Fy</td>
+<td style="text-align: left;">Y箍筋设计内力Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y箍筋设计内力Fz</td>
+<td style="text-align: left;">Y箍筋设计内力Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y箍筋设计内力Mx</td>
+<td style="text-align: left;">Y箍筋设计内力Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y箍筋设计内力My</td>
+<td style="text-align: left;">Y箍筋设计内力My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y箍筋设计内力Mz</td>
+<td style="text-align: left;">Y箍筋设计内力Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-柱核心区配筋">（指标类型-柱核心区配筋）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-13">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-13">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">体积配箍率</td>
+<td style="text-align: left;">体积配箍率</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X方向配筋面积</td>
+<td style="text-align: left;">X方向配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X方向计算配筋面积</td>
+<td style="text-align: left;">X方向计算配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X方向配筋组合号</td>
+<td style="text-align: left;">X方向配筋组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y方向配筋面积</td>
+<td style="text-align: left;">Y方向配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y方向计算配筋面积</td>
+<td style="text-align: left;">Y方向计算配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y方向配筋组合号</td>
+<td style="text-align: left;">Y方向配筋组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X方向配筋Fx</td>
+<td style="text-align: left;">X方向配筋Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X方向配筋Fy</td>
+<td style="text-align: left;">X方向配筋Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X方向配筋Fz</td>
+<td style="text-align: left;">X方向配筋Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X方向配筋Mx</td>
+<td style="text-align: left;">X方向配筋Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X方向配筋My</td>
+<td style="text-align: left;">X方向配筋My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X方向配筋Mz</td>
+<td style="text-align: left;">X方向配筋Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y方向配筋Fx</td>
+<td style="text-align: left;">Y方向配筋Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y方向配筋Fy</td>
+<td style="text-align: left;">Y方向配筋Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y方向配筋Fz</td>
+<td style="text-align: left;">Y方向配筋Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y方向配筋Mx</td>
+<td style="text-align: left;">Y方向配筋Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y方向配筋My</td>
+<td style="text-align: left;">Y方向配筋My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y方向配筋Mz</td>
+<td style="text-align: left;">Y方向配筋Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-型钢柱应力度">（指标类型-型钢柱应力度）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-14">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-14">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">强度计算应力</td>
+<td style="text-align: left;">强度计算应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">强度允许应力</td>
+<td style="text-align: left;">强度允许应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">强度组合号</td>
+<td style="text-align: left;">强度组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向稳定计算应力</td>
+<td style="text-align: left;">X向稳定计算应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向稳定允许应力</td>
+<td style="text-align: left;">X向稳定允许应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向稳定组合号</td>
+<td style="text-align: left;">X向稳定组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向稳定计算应力</td>
+<td style="text-align: left;">Y向稳定计算应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向稳定允许应力</td>
+<td style="text-align: left;">Y向稳定允许应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向稳定组合号</td>
+<td style="text-align: left;">Y向稳定组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向抗剪计算应力</td>
+<td style="text-align: left;">X向抗剪计算应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向抗剪允许应力</td>
+<td style="text-align: left;">X向抗剪允许应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向抗剪组合号</td>
+<td style="text-align: left;">X向抗剪组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向抗剪计算应力</td>
+<td style="text-align: left;">Y向抗剪计算应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向抗剪允许应力</td>
+<td style="text-align: left;">Y向抗剪允许应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向抗剪组合号</td>
+<td style="text-align: left;">Y向抗剪组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">强度内力Fx</td>
+<td style="text-align: left;">强度内力Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">强度内力Fy</td>
+<td style="text-align: left;">强度内力Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">强度内力Fz</td>
+<td style="text-align: left;">强度内力Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">强度内力Mx</td>
+<td style="text-align: left;">强度内力Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">强度内力My</td>
+<td style="text-align: left;">强度内力My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">强度内力Mz</td>
+<td style="text-align: left;">强度内力Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向稳定Fx</td>
+<td style="text-align: left;">X向稳定Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向稳定Fy</td>
+<td style="text-align: left;">X向稳定Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向稳定Fz</td>
+<td style="text-align: left;">X向稳定Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向稳定Mx</td>
+<td style="text-align: left;">X向稳定Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向稳定My</td>
+<td style="text-align: left;">X向稳定My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向稳定Mz</td>
+<td style="text-align: left;">X向稳定Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向稳定Fx</td>
+<td style="text-align: left;">Y向稳定Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向稳定Fy</td>
+<td style="text-align: left;">Y向稳定Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向稳定Fz</td>
+<td style="text-align: left;">Y向稳定Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向稳定Mx</td>
+<td style="text-align: left;">Y向稳定Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向稳定My</td>
+<td style="text-align: left;">Y向稳定My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向稳定Mz</td>
+<td style="text-align: left;">Y向稳定Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向抗剪Fx</td>
+<td style="text-align: left;">X向抗剪Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向抗剪Fy</td>
+<td style="text-align: left;">X向抗剪Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向抗剪Fz</td>
+<td style="text-align: left;">X向抗剪Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向抗剪Mx</td>
+<td style="text-align: left;">X向抗剪Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向抗剪My</td>
+<td style="text-align: left;">X向抗剪My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向抗剪Mz</td>
+<td style="text-align: left;">X向抗剪Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向抗剪Fx</td>
+<td style="text-align: left;">Y向抗剪Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向抗剪Fy</td>
+<td style="text-align: left;">Y向抗剪Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向抗剪Fz</td>
+<td style="text-align: left;">Y向抗剪Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向抗剪Mx</td>
+<td style="text-align: left;">Y向抗剪Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向抗剪My</td>
+<td style="text-align: left;">Y向抗剪My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向抗剪Mz</td>
+<td style="text-align: left;">Y向抗剪Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-柱轴压比">（指标类型-柱轴压比）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-15">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-15">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">轴压比</td>
+<td style="text-align: left;">轴压比</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">轴压比限值</td>
+<td style="text-align: left;">轴压比限值</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">轴力设计值</td>
+<td style="text-align: left;">轴力设计值</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">设计值组合号</td>
+<td style="text-align: left;">设计值组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-柱剪跨比">（指标类型-柱剪跨比）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-16">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-16">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">剪跨比</td>
+<td style="text-align: left;">剪跨比</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-柱超限信息">（指标类型-柱超限信息）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-17">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-17">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件类型</td>
+<td style="text-align: left;">构件类型</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">ElementType</td>
+</tr>
+<tr>
+<td style="text-align: left;">超限信息</td>
+<td style="text-align: left;">超限信息</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSLimitationInfo</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-柱长细比">（指标类型-柱长细比）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-18">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-18">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向长细比</td>
+<td style="text-align: left;">X向长细比</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向长细比</td>
+<td style="text-align: left;">Y向长细比</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">允许长细比</td>
+<td style="text-align: left;">允许长细比</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">宽厚比</td>
+<td style="text-align: left;">宽厚比</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">宽厚比限值</td>
+<td style="text-align: left;">宽厚比限值</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">高厚比</td>
+<td style="text-align: left;">高厚比</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">高厚比限值</td>
+<td style="text-align: left;">高厚比限值</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-柱基本荷载组合">（指标类型-柱基本荷载组合）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-19">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-19">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">内力</td>
+<td style="text-align: left;">内力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFrameForceResult</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-柱标准荷载组合">（指标类型-柱标准荷载组合）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-20">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-20">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">内力</td>
+<td style="text-align: left;">内力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFrameForceResult</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-柱剪压比">（指标类型-柱剪压比）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-21">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-21">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">剪压比</td>
+<td style="text-align: left;">剪压比</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">剪压比限值</td>
+<td style="text-align: left;">剪压比限值</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-柱局部坐标轴">（指标类型-柱局部坐标轴）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-22">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-22">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">平面</td>
+<td style="text-align: left;">平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-支撑内力">（指标类型-支撑内力）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-23">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-23">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">内力</td>
+<td style="text-align: left;">内力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFrameForceResult</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-混凝土支撑配筋">（指标类型-混凝土支撑配筋）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-24">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-24">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">角筋</td>
+<td style="text-align: left;">角筋</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X纵筋配筋面积</td>
+<td style="text-align: left;">X纵筋配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X纵筋计算配筋面积</td>
+<td style="text-align: left;">X纵筋计算配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X纵筋组合号</td>
+<td style="text-align: left;">X纵筋组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y纵筋配筋面积</td>
+<td style="text-align: left;">Y纵筋配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y纵筋计算配筋面积</td>
+<td style="text-align: left;">Y纵筋计算配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y纵筋组合号</td>
+<td style="text-align: left;">Y纵筋组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X箍筋配筋面积</td>
+<td style="text-align: left;">X箍筋配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X箍筋计算配筋面积</td>
+<td style="text-align: left;">X箍筋计算配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X箍筋组合号</td>
+<td style="text-align: left;">X箍筋组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y箍筋配筋面积</td>
+<td style="text-align: left;">Y箍筋配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y箍筋计算配筋面积</td>
+<td style="text-align: left;">Y箍筋计算配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y箍筋组合号</td>
+<td style="text-align: left;">Y箍筋组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X纵筋设计内力Fx</td>
+<td style="text-align: left;">X纵筋设计内力Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X纵筋设计内力Fy</td>
+<td style="text-align: left;">X纵筋设计内力Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X纵筋设计内力Fz</td>
+<td style="text-align: left;">X纵筋设计内力Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X纵筋设计内力Mx</td>
+<td style="text-align: left;">X纵筋设计内力Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X纵筋设计内力My</td>
+<td style="text-align: left;">X纵筋设计内力My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X纵筋设计内力Mz</td>
+<td style="text-align: left;">X纵筋设计内力Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y纵筋设计内力Fx</td>
+<td style="text-align: left;">Y纵筋设计内力Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y纵筋设计内力Fy</td>
+<td style="text-align: left;">Y纵筋设计内力Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y纵筋设计内力Fz</td>
+<td style="text-align: left;">Y纵筋设计内力Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y纵筋设计内力Mx</td>
+<td style="text-align: left;">Y纵筋设计内力Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y纵筋设计内力My</td>
+<td style="text-align: left;">Y纵筋设计内力My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y纵筋设计内力Mz</td>
+<td style="text-align: left;">Y纵筋设计内力Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X箍筋设计内力Fx</td>
+<td style="text-align: left;">X箍筋设计内力Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X箍筋设计内力Fy</td>
+<td style="text-align: left;">X箍筋设计内力Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X箍筋设计内力Fz</td>
+<td style="text-align: left;">X箍筋设计内力Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X箍筋设计内力Mx</td>
+<td style="text-align: left;">X箍筋设计内力Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X箍筋设计内力My</td>
+<td style="text-align: left;">X箍筋设计内力My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X箍筋设计内力Mz</td>
+<td style="text-align: left;">X箍筋设计内力Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y箍筋设计内力Fx</td>
+<td style="text-align: left;">Y箍筋设计内力Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y箍筋设计内力Fy</td>
+<td style="text-align: left;">Y箍筋设计内力Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y箍筋设计内力Fz</td>
+<td style="text-align: left;">Y箍筋设计内力Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y箍筋设计内力Mx</td>
+<td style="text-align: left;">Y箍筋设计内力Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y箍筋设计内力My</td>
+<td style="text-align: left;">Y箍筋设计内力My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y箍筋设计内力Mz</td>
+<td style="text-align: left;">Y箍筋设计内力Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-型钢支撑应力度">（指标类型-型钢支撑应力度）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-25">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-25">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">强度计算应力</td>
+<td style="text-align: left;">强度计算应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">强度允许应力</td>
+<td style="text-align: left;">强度允许应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">强度组合号</td>
+<td style="text-align: left;">强度组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向稳定计算应力</td>
+<td style="text-align: left;">X向稳定计算应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向稳定允许应力</td>
+<td style="text-align: left;">X向稳定允许应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向稳定组合号</td>
+<td style="text-align: left;">X向稳定组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向稳定计算应力</td>
+<td style="text-align: left;">Y向稳定计算应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向稳定允许应力</td>
+<td style="text-align: left;">Y向稳定允许应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向稳定组合号</td>
+<td style="text-align: left;">Y向稳定组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向抗剪计算应力</td>
+<td style="text-align: left;">X向抗剪计算应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向抗剪允许应力</td>
+<td style="text-align: left;">X向抗剪允许应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向抗剪组合号</td>
+<td style="text-align: left;">X向抗剪组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向抗剪计算应力</td>
+<td style="text-align: left;">Y向抗剪计算应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向抗剪允许应力</td>
+<td style="text-align: left;">Y向抗剪允许应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向抗剪组合号</td>
+<td style="text-align: left;">Y向抗剪组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">强度内力Fx</td>
+<td style="text-align: left;">强度内力Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">强度内力Fy</td>
+<td style="text-align: left;">强度内力Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">强度内力Fz</td>
+<td style="text-align: left;">强度内力Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">强度内力Mx</td>
+<td style="text-align: left;">强度内力Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">强度内力My</td>
+<td style="text-align: left;">强度内力My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">强度内力Mz</td>
+<td style="text-align: left;">强度内力Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向稳定Fx</td>
+<td style="text-align: left;">X向稳定Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向稳定Fy</td>
+<td style="text-align: left;">X向稳定Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向稳定Fz</td>
+<td style="text-align: left;">X向稳定Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向稳定Mx</td>
+<td style="text-align: left;">X向稳定Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向稳定My</td>
+<td style="text-align: left;">X向稳定My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向稳定Mz</td>
+<td style="text-align: left;">X向稳定Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向稳定Fx</td>
+<td style="text-align: left;">Y向稳定Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向稳定Fy</td>
+<td style="text-align: left;">Y向稳定Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向稳定Fz</td>
+<td style="text-align: left;">Y向稳定Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向稳定Mx</td>
+<td style="text-align: left;">Y向稳定Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向稳定My</td>
+<td style="text-align: left;">Y向稳定My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向稳定Mz</td>
+<td style="text-align: left;">Y向稳定Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向抗剪Fx</td>
+<td style="text-align: left;">X向抗剪Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向抗剪Fy</td>
+<td style="text-align: left;">X向抗剪Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向抗剪Fz</td>
+<td style="text-align: left;">X向抗剪Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向抗剪Mx</td>
+<td style="text-align: left;">X向抗剪Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向抗剪My</td>
+<td style="text-align: left;">X向抗剪My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向抗剪Mz</td>
+<td style="text-align: left;">X向抗剪Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向抗剪Fx</td>
+<td style="text-align: left;">Y向抗剪Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向抗剪Fy</td>
+<td style="text-align: left;">Y向抗剪Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向抗剪Fz</td>
+<td style="text-align: left;">Y向抗剪Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向抗剪Mx</td>
+<td style="text-align: left;">Y向抗剪Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向抗剪My</td>
+<td style="text-align: left;">Y向抗剪My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向抗剪Mz</td>
+<td style="text-align: left;">Y向抗剪Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-支撑轴压比">（指标类型-支撑轴压比）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-26">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-26">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">轴压比</td>
+<td style="text-align: left;">轴压比</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">轴压比限值</td>
+<td style="text-align: left;">轴压比限值</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">轴力设计值</td>
+<td style="text-align: left;">轴力设计值</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">设计值组合号</td>
+<td style="text-align: left;">设计值组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-支撑剪跨比">（指标类型-支撑剪跨比）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-27">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-27">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">剪跨比</td>
+<td style="text-align: left;">剪跨比</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-支撑长细比">（指标类型-支撑长细比）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-28">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-28">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">X向长细比</td>
+<td style="text-align: left;">X向长细比</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y向长细比</td>
+<td style="text-align: left;">Y向长细比</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">允许长细比</td>
+<td style="text-align: left;">允许长细比</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">宽厚比</td>
+<td style="text-align: left;">宽厚比</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">宽厚比限值</td>
+<td style="text-align: left;">宽厚比限值</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">高厚比</td>
+<td style="text-align: left;">高厚比</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">高厚比限值</td>
+<td style="text-align: left;">高厚比限值</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-支撑核心区配筋">（指标类型-支撑核心区配筋）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-29">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-29">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">体积配箍率</td>
+<td style="text-align: left;">体积配箍率</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X方向配筋面积</td>
+<td style="text-align: left;">X方向配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X方向计算配筋面积</td>
+<td style="text-align: left;">X方向计算配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X方向配筋组合号</td>
+<td style="text-align: left;">X方向配筋组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y方向配筋面积</td>
+<td style="text-align: left;">Y方向配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y方向计算配筋面积</td>
+<td style="text-align: left;">Y方向计算配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y方向配筋组合号</td>
+<td style="text-align: left;">Y方向配筋组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X方向配筋Fx</td>
+<td style="text-align: left;">X方向配筋Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X方向配筋Fy</td>
+<td style="text-align: left;">X方向配筋Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X方向配筋Fz</td>
+<td style="text-align: left;">X方向配筋Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X方向配筋Mx</td>
+<td style="text-align: left;">X方向配筋Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X方向配筋My</td>
+<td style="text-align: left;">X方向配筋My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">X方向配筋Mz</td>
+<td style="text-align: left;">X方向配筋Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y方向配筋Fx</td>
+<td style="text-align: left;">Y方向配筋Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y方向配筋Fy</td>
+<td style="text-align: left;">Y方向配筋Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y方向配筋Fz</td>
+<td style="text-align: left;">Y方向配筋Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y方向配筋Mx</td>
+<td style="text-align: left;">Y方向配筋Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y方向配筋My</td>
+<td style="text-align: left;">Y方向配筋My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Y方向配筋Mz</td>
+<td style="text-align: left;">Y方向配筋Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-支撑超限信息">（指标类型-支撑超限信息）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-30">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-30">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件类型</td>
+<td style="text-align: left;">构件类型</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">ElementType</td>
+</tr>
+<tr>
+<td style="text-align: left;">超限信息</td>
+<td style="text-align: left;">超限信息</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSLimitationInfo</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-支撑基本荷载组合">（指标类型-支撑基本荷载组合）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-31">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-31">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">内力</td>
+<td style="text-align: left;">内力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFrameForceResult</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-支撑标准荷载组合">（指标类型-支撑标准荷载组合）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-32">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-32">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">内力</td>
+<td style="text-align: left;">内力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFrameForceResult</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-支撑剪压比">（指标类型-支撑剪压比）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-33">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-33">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">剪压比</td>
+<td style="text-align: left;">剪压比</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">剪压比限值</td>
+<td style="text-align: left;">剪压比限值</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-支撑局部坐标轴">（指标类型-支撑局部坐标轴）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-34">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-34">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">平面</td>
+<td style="text-align: left;">平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-剪力墙内力">（指标类型-剪力墙内力）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-35">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-35">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">内力</td>
+<td style="text-align: left;">内力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSWallForceResult</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-剪力墙配筋">（指标类型-剪力墙配筋）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-36">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-36">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">正截面起点纵筋配筋面积</td>
+<td style="text-align: left;">正截面起点纵筋配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">正截面起点纵筋计算配筋面积</td>
+<td style="text-align: left;">正截面起点纵筋计算配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">正截面起点纵筋组合号</td>
+<td style="text-align: left;">正截面起点纵筋组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">正截面终点纵筋配筋面积</td>
+<td style="text-align: left;">正截面终点纵筋配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">正截面终点纵筋计算配筋面积</td>
+<td style="text-align: left;">正截面终点纵筋计算配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">正截面终点纵筋组合号</td>
+<td style="text-align: left;">正截面终点纵筋组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">斜截面水平配筋配筋面积</td>
+<td style="text-align: left;">斜截面水平配筋配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">斜截面水平配筋计算配筋面积</td>
+<td style="text-align: left;">斜截面水平配筋计算配筋面积</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">斜截面水平配筋组合号</td>
+<td style="text-align: left;">斜截面水平配筋组合号</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">正截面起点纵筋Fx</td>
+<td style="text-align: left;">正截面起点纵筋Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">正截面起点纵筋Fy</td>
+<td style="text-align: left;">正截面起点纵筋Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">正截面起点纵筋Fz</td>
+<td style="text-align: left;">正截面起点纵筋Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">正截面起点纵筋Mx</td>
+<td style="text-align: left;">正截面起点纵筋Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">正截面起点纵筋My</td>
+<td style="text-align: left;">正截面起点纵筋My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">正截面起点纵筋Mz</td>
+<td style="text-align: left;">正截面起点纵筋Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">正截面终点纵筋Fx</td>
+<td style="text-align: left;">正截面终点纵筋Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">正截面终点纵筋Fy</td>
+<td style="text-align: left;">正截面终点纵筋Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">正截面终点纵筋Fz</td>
+<td style="text-align: left;">正截面终点纵筋Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">正截面终点纵筋Mx</td>
+<td style="text-align: left;">正截面终点纵筋Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">正截面终点纵筋My</td>
+<td style="text-align: left;">正截面终点纵筋My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">正截面终点纵筋Mz</td>
+<td style="text-align: left;">正截面终点纵筋Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">斜截面水平配筋Fx</td>
+<td style="text-align: left;">斜截面水平配筋Fx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">斜截面水平配筋Fy</td>
+<td style="text-align: left;">斜截面水平配筋Fy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">斜截面水平配筋Fz</td>
+<td style="text-align: left;">斜截面水平配筋Fz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">斜截面水平配筋Mx</td>
+<td style="text-align: left;">斜截面水平配筋Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">斜截面水平配筋My</td>
+<td style="text-align: left;">斜截面水平配筋My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">斜截面水平配筋Mz</td>
+<td style="text-align: left;">斜截面水平配筋Mz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-剪力墙轴压比">（指标类型-剪力墙轴压比）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-37">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-37">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">轴压比</td>
+<td style="text-align: left;">轴压比</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">轴压比限值</td>
+<td style="text-align: left;">轴压比限值</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">轴力设计值</td>
+<td style="text-align: left;">轴力设计值</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">组合轴压比</td>
+<td style="text-align: left;">组合轴压比</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-剪力墙剪跨比">（指标类型-剪力墙剪跨比）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-38">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-38">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">剪跨比</td>
+<td style="text-align: left;">剪跨比</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-剪力墙超限信息">（指标类型-剪力墙超限信息）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-39">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-39">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件类型</td>
+<td style="text-align: left;">构件类型</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">ElementType</td>
+</tr>
+<tr>
+<td style="text-align: left;">超限信息</td>
+<td style="text-align: left;">超限信息</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSLimitationInfo</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-剪力墙基本荷载组合">（指标类型-剪力墙基本荷载组合）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-40">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-40">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">内力</td>
+<td style="text-align: left;">内力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSWallForceResult</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-剪力墙标准荷载组合">（指标类型-剪力墙标准荷载组合）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-41">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-41">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">内力</td>
+<td style="text-align: left;">内力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSWallForceResult</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-剪力墙剪压比">（指标类型-剪力墙剪压比）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-42">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-42">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">剪压比</td>
+<td style="text-align: left;">剪压比</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">剪压比限值</td>
+<td style="text-align: left;">剪压比限值</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-剪力墙局部坐标轴">（指标类型-剪力墙局部坐标轴）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-43">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-43">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">平面</td>
+<td style="text-align: left;">平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-节点局部坐标轴">（指标类型-节点局部坐标轴）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-44">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-44">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">节点</td>
+<td style="text-align: left;">节点</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Point3d</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">平面</td>
+<td style="text-align: left;">平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-隔震支座等效刚度及阻尼">（指标类型-隔震支座等效刚度及阻尼）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-45">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-45">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">节点</td>
+<td style="text-align: left;">节点</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Point3d</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">水平X屈服力</td>
+<td style="text-align: left;">水平X屈服力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">水平Y屈服力</td>
+<td style="text-align: left;">水平Y屈服力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">屈服后的水平刚度</td>
+<td style="text-align: left;">屈服后的水平刚度</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">U2向等效刚度(kN/m)</td>
+<td style="text-align: left;">U2向等效刚度(kN/m)</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">U3向等效刚度(kN/m)</td>
+<td style="text-align: left;">U3向等效刚度(kN/m)</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">U2向等效阻尼比(kN/m*s)</td>
+<td style="text-align: left;">U2向等效阻尼比(kN/m*s)</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">U3向等效阻尼比(kN/m*s)</td>
+<td style="text-align: left;">U3向等效阻尼比(kN/m*s)</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-隔震支座最大应力及位移">（指标类型-隔震支座最大应力及位移）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-46">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-46">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">节点</td>
+<td style="text-align: left;">节点</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Point3d</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">重力荷载代表值的压应力</td>
+<td style="text-align: left;">重力荷载代表值的压应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">罕遇地震下的最大压应力</td>
+<td style="text-align: left;">罕遇地震下的最大压应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">罕遇地震下的最大拉应力</td>
+<td style="text-align: left;">罕遇地震下的最大拉应力</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">罕遇地震下的支座水平位移(mm)</td>
+<td style="text-align: left;">罕遇地震下的支座水平位移(mm)</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-隔震支座中震下位移">（指标类型-隔震支座中震下位移）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-47">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-47">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">节点</td>
+<td style="text-align: left;">节点</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Point3d</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">工况</td>
+<td style="text-align: left;">工况</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">String</td>
+</tr>
+<tr>
+<td style="text-align: left;">位移X</td>
+<td style="text-align: left;">位移X</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">位移Y</td>
+<td style="text-align: left;">位移Y</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">位移Z</td>
+<td style="text-align: left;">位移Z</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">位移Rx</td>
+<td style="text-align: left;">位移Rx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">位移Ry</td>
+<td style="text-align: left;">位移Ry</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">位移Rz</td>
+<td style="text-align: left;">位移Rz</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-隔震支座中震下内力">（指标类型-隔震支座中震下内力）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-48">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-48">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">节点</td>
+<td style="text-align: left;">节点</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Point3d</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">工况</td>
+<td style="text-align: left;">工况</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">String</td>
+</tr>
+<tr>
+<td style="text-align: left;">Mx</td>
+<td style="text-align: left;">Mx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">My</td>
+<td style="text-align: left;">My</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Vx</td>
+<td style="text-align: left;">Vx</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">Vy</td>
+<td style="text-align: left;">Vy</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">N</td>
+<td style="text-align: left;">N</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">T</td>
+<td style="text-align: left;">T</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指标类型-迭代后等效刚度和阻尼">（指标类型-迭代后等效刚度和阻尼）</h1>
+<p>获取指定的结构构件指标</p>
+<h2 id="输入端inputside-49">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">模型代理</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">NSModelProxy</td>
+</tr>
+<tr>
+<td style="text-align: left;">构件</td>
+<td style="text-align: left;">要获取指标的构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">楼层平面</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Plane</td>
+</tr>
+<tr>
+<td style="text-align: left;">Json模式</td>
+<td style="text-align: left;">Json模式用于计算YJK模型时，获取后台YJK计算的结果。设计结果模式用于获取当前YJK程序加载的计算结果，需要切换到设计结果菜单下，此时卡片接收的模型代理可任意定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-49">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">单元线</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Curve</td>
+</tr>
+<tr>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">楼层构件</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">NSFloorElementBase</td>
+</tr>
+<tr>
+<td style="text-align: left;">方向</td>
+<td style="text-align: left;">方向</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Int32</td>
+</tr>
+<tr>
+<td style="text-align: left;">消能器类型</td>
+<td style="text-align: left;">消能器类型</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">JGZ_UnitType</td>
+</tr>
+<tr>
+<td style="text-align: left;">等效迭代刚度</td>
+<td style="text-align: left;">等效迭代刚度</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">等效迭代阻尼</td>
+<td style="text-align: left;">等效迭代阻尼</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">初始有效刚度</td>
+<td style="text-align: left;">初始有效刚度</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">初始有效阻尼</td>
+<td style="text-align: left;">初始有效阻尼</td>
+<td style="text-align: left;">容器数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h2 id="示例">示例</h2>
+<p><img src="../file/%E6%9E%84%E4%BB%B6%E6%8C%87%E6%A0%87(%E6%9E%84%E4%BB%B6)_01.png" alt="示例文件:构件指标(构件)_01.png"></p>
+<p><img src="../file/%E6%9E%84%E4%BB%B6%E6%8C%87%E6%A0%87(%E6%9E%84%E4%BB%B6)_02.png" alt="示例文件:构件指标(构件)_02.png"></p>
+<p><img src="../file/%E6%9E%84%E4%BB%B6%E6%8C%87%E6%A0%87(%E6%9E%84%E4%BB%B6)_03.png" alt="示例文件:构件指标(构件)_03.png"></p>
+<p><a href="../file/%E6%9E%84%E4%BB%B6%E6%8C%87%E6%A0%87(%E6%9E%84%E4%BB%B6)_01.pgu">示例文件:构件指标(构件)_01.pgu</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) 非解构数字科技有限公司
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

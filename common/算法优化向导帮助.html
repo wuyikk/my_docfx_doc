@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#25351;&#26631;&#35843;&#25972;&#21521;&#23548;&#24110;&#21161; | GAMA&#21345;&#29255;&#25216;&#26415;&#25991;&#26723; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#25351;&#26631;&#35843;&#25972;&#21521;&#23548;&#24110;&#21161; | GAMA&#21345;&#29255;&#25216;&#26415;&#25991;&#26723; ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../../Favicon/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="指标调整向导帮助">指标调整向导帮助</h1>
+
+<h2 id="一启动向导">（一）启动向导</h2>
+<p>可以通过点击【数智设计】选项卡下的“<strong>指标调整</strong>”按钮来启动指标调整向导：</p>
+<p><img src="../file/%E6%8C%87%E6%A0%87%E8%B0%83%E6%95%B4%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20231108155427053.png" alt="image-20231108155427053"></p>
+<h2 id="二流程简介">（二）流程简介</h2>
+<p>算法的原理可以参考“指标调整常见问题”中内容，在此不做赘述。</p>
+<p>指标调整向导主要针对于**通过智能算法来调整构件截面以使得模型的指标在满足特定限制的情况下，最大化或者最小化某项（或某几项）指标”**的特定应用场景，其中，“模型的指标”包括但不限于：</p>
+<p>• 结构总质量</p>
+<p>• 材料用量（混凝土、钢筋、型钢）</p>
+<p>• 周期、周期比</p>
+<p>• 位移角、位移比</p>
+<p>• 刚度比</p>
+<p>• 剪重比</p>
+<p>• 刚重比</p>
+<p>• 抗剪承载力比</p>
+<p>• 抗倾覆力矩与倾覆力矩比值、零应力区</p>
+<p>整个使用流程大致分为三个步骤：</p>
+<p><strong>1.设置问题的参数</strong></p>
+<p>– 设置需要调整的构件及智能算法在调整它们时可选的候选截面；</p>
+<p><strong>2. 设置问题的约束</strong></p>
+<p>– 在智能算法调整模型过程中，模型需要满足的指标；</p>
+<p><strong>3. 设置问题的目标</strong></p>
+<p>– 在对模型计算结果评价中，需要关注的指标（即“哪个模型是较好的模型”）。</p>
+<p><strong>注：约束与目标的区别</strong></p>
+<p>约束是满足即可，例如是结构的某些指标。</p>
+<p>目标是越小越好，例如在满足结构指标(约束)的条件下，哪个模型是最好的；目标可以是经济性，也可以是结构某项指标。关键在于希望哪一项<strong>越少越好</strong>。</p>
+<h2 id="三操作流程">（三）操作流程</h2>
+<p><img src="../file/%E6%8C%87%E6%A0%87%E8%B0%83%E6%95%B4%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20231108160025700.png" alt="image-20231108160025700"></p>
+<h3 id="1-设置参数">1. <strong>设置参数</strong></h3>
+<h4 id="11-选择需调整的设计构件"><strong>1.1</strong> <strong>选择需调整的设计构件</strong></h4>
+<p>每一个参数是由一组别调整的“设计构件”和一组“备选截面”组成的。设置参数时，首先需要选择参数所对应的构件类型（下图 ①）。</p>
+<p>指标调整的构件组类型有”梁构件组“，”柱构件组“，”斜撑构件组“，”墙构件组（墙厚度）“以及”节点位置组（墙肢长度）“，前四个构件组类型的构件选取方式和候选截面添加方式比较接近，操作说明见下；”节点位置组（墙肢长度）“的操作说明见后。</p>
+<p>点击<strong>添加构件组</strong>中的某个构件组类别来打开添加参数窗口。首先根据下图中 ②~④选择“设计构件”，然后通过⑤选择这部分构件的候选截面。注意在指标调整中，一组“设计构件”始终保持为一个截面：</p>
+<p><img src="../file/%E6%8C%87%E6%A0%87%E8%B0%83%E6%95%B4%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/1(1).jpg" alt="1(1)"></p>
+<p>”节点位置组（墙肢长度）“的操作说明如下图所示：</p>
+<p><img src="../file/%E6%8C%87%E6%A0%87%E8%B0%83%E6%95%B4%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/2(1).jpg" alt="2(1)"></p>
+<p>点击<strong>添加构件组</strong>中的”节点位置组“来打开添加参数窗口。首先类似于上述操作选择“YJK节点”，然后通过①-②定义节点的移动方向、移动距离的上、下限和步长。可通过”仅允许平行于现有构件的调整“来控制垂直于节点移动方向的构件是否跟着移动。如上图所示：</p>
+<p>注意在指标调整中，一组“设计构件”始终保持为一个节点移动值。</p>
+<h4 id="12-设计构件的候选截面"><strong>1.2</strong> <strong>设计构件的候选截面</strong></h4>
+<p>当选择<strong>截面库</strong>模式时，可以使用按钮来添加自定义截面，或者是从现有盈建科模型中读取在模型中已经建立的截面类型。</p>
+<p>当选择<strong>上下限模式</strong>时，可以通过截面类型、材料类型生成截面库。截面属性表中每个属性均会对应有个复选框（小钩√），若该复选框并未被选中时，则截面的该项属性将保持默认值不变化，此时下限值、上限值、步长的设置不会生效。</p>
+<p>候选截面会赋予到“设计构件中”，计算过程中每次挑选一个截面。即一组“设计构件”始终保持为一个截面。</p>
+<p><img src="../file/%E6%8C%87%E6%A0%87%E8%B0%83%E6%95%B4%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20231108160315242.png" alt="image-20231108160315242"></p>
+<h3 id="2添加其他参数">2.<strong>添加其他参数</strong></h3>
+<p>一个参数添加完毕后，可以继续添加其他的参数。</p>
+<p>参数之间是互相独立存在的，算法在调整截面时，会将挑选其中一个候选截面赋予给这“设计构件”。即一个参数内的所有“设计构件”经过算法调整后会是同一个截面。</p>
+<h3 id="3设置约束">3.<strong>设置约束</strong></h3>
+<p>智能算法在进行模型评价时，会倾向于选择所有约束都满足的模型，正确地选择约束可以让算法帮设计师朋友们快速排除不符合需求的模型。<strong>因此，过于严格的约束可能导致算法始终找不到符合要求的模型。</strong></p>
+<p>关于算法的说明，可以参考“常见问题目录”中内容，在此不再赘述。</p>
+<p>可以通过“快速批量设置”、“手动设置”两种方式进行约束设置：</p>
+<h4 id="31快速批量设置">3.1<strong>快速批量设置</strong></h4>
+<p>快速批量设置中预设了常用的结构指标，用户可以将自己常用的设置通过“另存为模板”按钮保存，并在下次使用时点击“读取模板”按钮恢复自定义设置。</p>
+<p><img src="../file/%E6%8C%87%E6%A0%87%E8%B0%83%E6%95%B4%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20231108163231335.png" alt="image-20231108163231335"></p>
+<h4 id="32手动设置">3.2<strong>手动设置</strong></h4>
+<p>在“设置指标约束”窗口中，左侧是挑选约束，可以对指标类型、具体指标、约束行为等进行详细设置，设置完毕后，可以单击中间的**”添加&gt;&gt;“**按钮来将挑选好的约束添加到算法的约束行为中，成为“已设置的约束”。</p>
+<p><img src="../file/%E6%8C%87%E6%A0%87%E8%B0%83%E6%95%B4%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20231108160752911.png" alt="image-20231108160752911"></p>
+<h3 id="4设置目标">4.<strong>设置目标</strong></h3>
+<p>由于出现多个满足所有约束的模型时，算法将挑选“目标”更优秀的模型为最佳模型，并且使用其参数来规划下一次模型的生成参数。</p>
+<p>所以，目标可以说是结构优化的总纲领；而约束是满足即可。</p>
+<p>与约束窗口类似，左侧挑选目标之后，通过中间的“<strong>添加&gt;&gt;</strong>”按钮来进行设置。与约束不同的是，目标无需进行详细的约束行为设置（大于小于等于），只需要选择**“优化方向”**，即尽量往大了调、尽量往小了调，以及尽量往某一个值去贴近。</p>
+<p>当选择“<strong>尽量接近指定值</strong>”作为目标时，需要额外指定具体的趋近值，并且右侧附有“？”帮助按钮，可以查看具体含义。</p>
+<p>需要注意，Y-GAMA内置的智能算法均支持设置多个目标。但目标数量过多（3个及以上）会<strong>极大程度</strong>上地增加计算复杂度，也会降低智能算法的评价函数效率。除非必要，尽量设置较少数量的目标（2个及以下），将其余需要控制的指标值设置成为约束。</p>
+<p>取消勾选<strong>计算板配筋</strong>可以提高计算速度，但钢筋总用量中将不再包含板钢筋用量。</p>
+<p>勾选<strong>删除中间过程计算结果</strong>将删除中间过程的计算结果，在迭代次数很多的情况下，此举可以节省储存空间。</p>
+<p>设置目标完成后，可以点击左下角“完成设置”按钮来完成向导，打开优化器界面。</p>
+<p><img src="../file/%E6%8C%87%E6%A0%87%E8%B0%83%E6%95%B4%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20231108161534652.png" alt="image-20231108161534652"></p>
+<h3 id="5启动优化及结果展示">5.<strong>启动优化及结果展示</strong></h3>
+<h4 id="51-启动优化"><strong>5.1</strong> <strong>启动优化</strong></h4>
+<p>设置好目标，点击确定后，就弹出优化器界面，如下图。这部分截面主要分三部分内容：选择算法、设置对应参数、启动优化。关于算法的选择，可以参考“常见问题”中对应内容。</p>
+<p><img src="../file/%E6%8C%87%E6%A0%87%E8%B0%83%E6%95%B4%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20231108162246298.png" alt="image-20231108162246298"></p>
+<h4 id="52-计算结果展示"><strong>5.2</strong> <strong>计算结果展示</strong></h4>
+<p>计算结果分为左侧“图形展示区”和右侧较优结果“数据展示区”。</p>
+<p><img src="../file/%E6%8C%87%E6%A0%87%E8%B0%83%E6%95%B4%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20230609182949163.png" alt="image-20230609182949163"></p>
+<p>数据展示区中，ID为计算的模型编号，目标、参数、约束为对应模型的结果。</p>
+<p>如ID40为第40个模型。对应目标为总质量，351.0541t。</p>
+<p><img src="../file/%E6%8C%87%E6%A0%87%E8%B0%83%E6%95%B4%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/wps28.jpg" alt="img"></p>
+<h4 id="53-在计算却不显示结果">5.3 在计算却不显示结果</h4>
+<p>​         参考“优化算法常见问题”第7条。</p>
+<h4 id="54-文件保存">5.4 文件保存</h4>
+<p><img src="../file/%E6%8C%87%E6%A0%87%E8%B0%83%E6%95%B4%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20230606174020576.png" alt="image-20230606174020576"></p>
+<h2 id="四-再次编辑和保存读取">（四） <strong>再次编辑和保存读取</strong></h2>
+<h3 id="1-再次打开指标调整向导">1. <strong>再次打开指标调整向导</strong></h3>
+<p>优化向导完成后，关闭弹出的“优化器”窗口，如下图4.1，会回到Y-GAMA模块的画布上，双击鼠标滚轮中键，即可以看到由“指标调整向导”自动创建的一系列卡片，如下图4.2。</p>
+<p><img src="../file/%E6%8C%87%E6%A0%87%E8%B0%83%E6%95%B4%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20230418165951337.png" alt="image-20230418165951337"></p>
+<p><img src="../file/%E6%8C%87%E6%A0%87%E8%B0%83%E6%95%B4%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20230418170643473.png" alt="image-20230418170643473"></p>
+<p>再次打开指标调整向导，可以双击画布的“<strong>优化参数箱</strong>”卡片或点击“返回优化设置”按钮，回到指标调整向导中，如上图4.2。之前设置的参数、约束、目标均会保存在内。</p>
+<p>再次启动指标调整，双击画布**“优化器”**卡片或点击“重新打开优化器”按钮，回到优化器启动界面，如上图4.2。</p>
+<h3 id="2-保存和读取">2. <strong>保存和读取</strong></h3>
+<p>当弹出画布界面后，截面优化参数均会保存在卡片组中。也就是说，只需保存画布上该文件（扩展名为.pgz），再次打开Y-GAMA时，通过画布读入对应的.pgz文件即可获取所有的数据。</p>
+<p><img src="../file/%E6%8C%87%E6%A0%87%E8%B0%83%E6%95%B4%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/wps31.jpg" alt="img"></p>
+<h3 id="3-卡片编辑指标调整向导">3. <strong>卡片编辑指标调整向导</strong></h3>
+<p>对于习惯使用卡片的用户，可以在优化向导生成的卡片基础上进行编辑。如果还有其他未能在指标调整向导中设置的约束和目标，可以在该画布上继续添加“结构指标”卡片来读取额外的数据，并连入“优化问题定义”卡片中，进行进一步的制定化。</p>
+<p><img src="../file/%E6%8C%87%E6%A0%87%E8%B0%83%E6%95%B4%E5%90%91%E5%AF%BC%E5%B8%AE%E5%8A%A9V3.0.assets/image-20230613141845210.png" alt="image-20230613141845210"></p>
+<p>总而言之，指标调整向导的流程保持了“参数化”流程打造，您可以在此基础上任意添加内容，比如添加额外的计算、实现结果写出文件等等。</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) 非解构数字科技有限公司
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

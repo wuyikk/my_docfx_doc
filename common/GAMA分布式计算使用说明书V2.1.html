@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GAMA&#20998;&#24067;&#24335;&#35745;&#31639;&#25945;&#31243; | GAMA&#21345;&#29255;&#25216;&#26415;&#25991;&#26723; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="GAMA&#20998;&#24067;&#24335;&#35745;&#31639;&#25945;&#31243; | GAMA&#21345;&#29255;&#25216;&#26415;&#25991;&#26723; ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../../Favicon/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="gama分布式计算教程">GAMA分布式计算教程</h1>
+
+<p>本次更新分布式计算的使用有了一些变化：</p>
+<ol>
+<li>启动方式</li>
+<li>搜寻规则</li>
+<li>关闭方式</li>
+</ol>
+<h2 id="1分布式计算模块配置">1．分布式计算模块配置</h2>
+<p>在安装之前，我们需要将杀毒软件关闭或者添加信任，在安装新版客户端后，在GAMA的界面打开分布式优化设置窗口</p>
+<p><img src="../file/distributed/1669961765639.png" alt="1669961765639"></p>
+<p>打开分布式计算管理窗口</p>
+<p><img src="../file/distributed/1669865689932.png" alt="1669865689932"></p>
+<p>启动服务前，我们可以修改服务端口和保存路径</p>
+<p>点击启动服务</p>
+<p><img src="../file/distributed/1669865724388.png" alt="1669865724388"></p>
+<p>此时本机是出于可以被其他计算机连接的状态，如果不想被连接，点击禁止连接。</p>
+<p>首次配置成功后，再次使用打开可以在安装目录下找到PDOM文件夹，双击PDOM.exe打开设置窗口<img src="../file/distributed/1669865607404.png" alt="1669865607404"></p>
+<h2 id="2计算任务发布">2.计算任务发布</h2>
+<p>我们可以在一台经过配置成功的计算机上进行任务发布。</p>
+<p>我们打开YJK-GAMA，连接好优化卡组后，双击“优化器“或“穷举器“，这里我们以优化器为例。</p>
+<p>选择遗传算法或粒子群算法，点击右下角”打开分布式优化计算面板”</p>
+<p><img src="../file/distributed/%E5%9B%BE%E7%89%871.png" alt="图片1"></p>
+<p>之后等待状态更新</p>
+<p><img src="../file/distributed/1669884496076.png" alt="1669884496076"></p>
+<p>首次运行时，会根据网关搜索可连接的计算机，更新时间稍长。</p>
+<p>首次运行后在YJK-GAMA安装目录下可以找到这个文件</p>
+<p><img src="../file/distributed/1669866448261.png" alt="1669866448261"></p>
+<p>这里保存着可以连接的客户端IP地址及端口信息</p>
+<p>这里的搜索规则是，如果文件夹下有worker_list.json文件且其中连接列表非空，点击刷新列表时就会只对其中的IP地址和对应的端口进行连接测试，速度会很快。</p>
+<p>读条结束后右侧会出现分布式优化计算面板</p>
+<p><img src="../file/distributed/1669866774384.png" alt="1669866774384"></p>
+<p>我们从上到下看面板的功能：</p>
+<p>点击启用后，再启动优化器计算则为分布式计算模式，未启用时则是普通的优化计算模式。</p>
+<p>在当前可用主机里我们可以看到可连接的主机，下面称他们为客户端，主机状态”on”对应“分布式计算模块的配置”设置中的允许被连接，即计算任务可以发布给该客户端；“off”则为不可连接，即不会将任务发布给该客户端。</p>
+<p>这里需要注意的是，如果局域网内有客户端进行了正确的设置但没有被自动搜索到，可以点击左下角“添加计算客户端“进行手动添加。如果我们在客户端中修改过服务端口，在这里需要点击右下角的搜索端口设置，将自定义的服务端口输入并点击刷新列表进行重新自动搜索。</p>
+<p>当以上步骤都设置成功后，我们可以点击优化器界面左下角的启动优化，这时候我们操作的主机将会作为服务器向其他客户端发布计算任务并接收计算结果</p>
+<p>另外如果模块运行时发生错误时会将错误信息记录在安装目录下的distributed_history.txt中</p>
+<p><img src="../file/distributed/1669866802383.png" alt="1669866802383"></p>
+<h2 id="3关闭方式">3.关闭方式</h2>
+<p><img src="../file/distributed/1669865724388.png" alt="1669865724388"></p>
+<p>更新后的分布式计算将不再采用注册服务的形式，在电脑用于计算期间，上图的设置窗口需要一直保持打开状态，可以点击右上角最小化进行隐藏窗口，当点击关闭设置窗口时，此电脑将无法连接到服务器，也无法再被搜索到。</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) 非解构数字科技有限公司
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

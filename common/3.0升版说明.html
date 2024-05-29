@@ -1,0 +1,359 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#20840;&#26032;GAMA&#33756;&#21333; | GAMA&#21345;&#29255;&#25216;&#26415;&#25991;&#26723; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#20840;&#26032;GAMA&#33756;&#21333; | GAMA&#21345;&#29255;&#25216;&#26415;&#25991;&#26723; ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../../Favicon/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="全新gama菜单">全新GAMA菜单</h1>
+
+<p>GAMA 3.0版本完全内嵌至YJK主程序中，不再需要通过单独的入口进入模块,打开结构计算模块默认启动GAMA。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122180752025.png" alt="image-20231122180752025"></p>
+<p>GAMA 的封装功能、成品卡片包移动至【模型荷载输入】—【数智设计】子菜单下。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122180759684.png" alt="image-20231122180759684"></p>
+<p>GAMA预览功能在【数智设计CAD】—【GAMA预览】子菜单下，用户可以在此预览GAMA读取、生成的所有数据。在该界面也可以绘制点、线以及简单区域形状和内置了一些几何修改常规操作。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122180806331.png" alt="image-20231122180806331"></p>
+<h1 id="截面优选">截面优选</h1>
+<h2 id="新增钢柱斜撑截面优选">新增【钢柱、斜撑】截面优选</h2>
+<p>新增钢柱、钢斜撑的截面优选问题，该功能依据构件的应力比遴选出最优的候选截面。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122180813788.png" alt="image-20231122180813788"> <img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122180818591.png" alt="image-20231122180818591"></p>
+<h3 id="应力比限值">应力比限值</h3>
+<p>将构件尽可能得调整到不⼤于且最接近各应⼒⽐限值的截面。</p>
+<h3 id="尺寸约束">尺寸约束</h3>
+<p>当截面库中所有的截面都不满足宽厚比、高厚比、长细比等尺寸约束要求时，构件将保持原截面。</p>
+<h3 id="超过限值">超过限值</h3>
+<p>指超过YJK指标的构件以及超过用户设定的应力比限值的构件。</p>
+<h3 id="只调超过限值的构件">只调超过限值的构件</h3>
+<p>每一代优化时，只会处理超过限值的构件。</p>
+<h3 id="考虑成本">考虑成本</h3>
+<p>优先将构件调整到满⾜应⼒⽐限值的情况，再考虑范围内面积最⼩的截面。详见1.3新增功能考虑成本。</p>
+<h3 id="上柱截面不超过下柱">上柱截面不超过下柱</h3>
+<p>优化时，上层柱⼦的尺寸不超过底部相连的下层竹子的尺寸（简单对比高宽或直径）。</p>
+<h3 id="验算荷载组合选项">验算荷载组合选项</h3>
+<p>对候选截面内⼒预测时，只验算最不利组合还是验算所有组合。只验算最不利荷载组合所需时间更短。</p>
+<h2 id="新增空间钢结构截面优选">新增【空间钢结构】截面优选</h2>
+<p>新增空间钢结构的截面优选问题，可以同时优化空间钢结构中的梁、柱、斜撑构件。该问题的目标与约束的设置与【钢柱、斜撑优化（应力比控制）】参考1.1 【钢柱、斜撑优化（应力比控制）】。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122180828714.png" alt=""></p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122180836565.png" alt="image-20231122180836565"></p>
+<h2 id="新增考虑成本功能">新增考虑成本功能</h2>
+<p>所有截面优选问题中增设【考虑成本】选项，勾选考虑成本之后，GAMA将在满足设定约束的截面中选择成本最低的构件截面，使优选后的模型成本最小化。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122180848063.png" alt="image-20231122180848063"></p>
+<p>构件成本的计算单价在向导界面的右上角进行设置。设置的单价除用于考虑构件成本外，还将用于工程造价记录项的计算统计。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122180852491.png" alt="image-20231122180852491"></p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122180858471.png" alt="image-20231122180858471"></p>
+<h2 id="新增并行计算功能">新增并行计算功能</h2>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122180904771.png" alt="image-20231122180904771"></p>
+<p>【截面优选】封装功能增加了并行计算功能，其可显著地加快优化速度。通过勾选【使用并行计算】可以开启并行计算，【并行计算数量】不能超过【当前可用最大并行数量】，建议设置为4-6之间，过多的并行数量并不会更显著地加快优化速度，因为线程切换包括线程间阻塞都会耗费时间。</p>
+<h2 id="二维门刚的截面优选">二维门刚的【截面优选】</h2>
+<p>在YJK【二维门刚设计软件】模块的【轴线网格】选项卡下设置有针对二维门刚开发的【截面优选】功能，Y-GAMA 3.0 门刚版本目前提供了包括“<strong>钢梁截面</strong>”、“<strong>钢柱、斜撑截面应力度控制</strong>”两种截面优选问题解决方案，可根据应力比自动遴选最适合的构件截面。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122180917841.png" alt="image-20231122180917841"></p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122180922271.png" alt="image-20231122180922271"></p>
+<p>详细操作流程可参考《Y-GAMA门刚截面优选向导帮助》用户手册。</p>
+<h1 id="指标调整">指标调整</h1>
+<h2 id="新增并行计算功能-1">新增并行计算功能</h2>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122180928508.png" alt="image-20231122180928508"></p>
+<p>【指标调整】封装功能增加了并行计算功能，其可同时计算多个YJK模型，显著增加优化效率。左下角的【并行计算已开启】表示各个优化算法默认使用并行计算，再次点击【并行计算已开启】可关闭并行计算。</p>
+<p>【并行计算已开启】左侧的齿轮可以经行并行计算设置，【设置并行数】不可超过当前电脑的CPU核心数，建议设置为4-6之间，并将需要计算的模型置于高速SSD硬盘或RAID硬盘中，以达到最佳运行效率。在YJK模型并行计算的时候，若发现使用其他软件非常卡顿，建议降低【设置并行数】。</p>
+<p>【并行计算已开启】右侧的【展开信息】可以查看YJK模型并行计算的过程，观察优化过程是否顺利。</p>
+<h2 id="新增指定楼层的位移比约束">新增指定楼层的位移比约束</h2>
+<p>用户可在【第二步：设置指标约束】的“快速批量设置”和“手动设置”中，将指定楼层的位移比设置为约束。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122180936524.png" alt="image-20231122180936524"></p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122180940853.png" alt="image-20231122180940853"></p>
+<h2 id="二维门刚的指标调整">二维门刚的【指标调整】</h2>
+<p>在YJK【二维门刚设计软件】模块的【轴线网格】选项卡下设置有针对二维门刚开发的【指标调整】功能。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122180948229.png" alt="image-20231122180948229"></p>
+<p>门刚的指标调整向导主要针对于**通过智能算法来调整构件截面以使得模型的指标在满足特定限制的情况下，最大化或者最小化某项（或某几项）指标”**的特定应用场景，其中，“模型的指标”包括：</p>
+<p>• 结构总质量</p>
+<p>• 材料用量（型钢）</p>
+<p>• 周期</p>
+<p>• 工程造价</p>
+<p>• 构件超限数量</p>
+<p>• 门刚梁、柱、支撑应力比限值</p>
+<p>• 门刚柱顶位移与高度比</p>
+<p>详细操作流程可参考《Y-GAMA门刚指标调整向导帮助》用户手册。</p>
+<h1 id="自定义工作流">自定义工作流</h1>
+<h2 id="新增截面优选通用卡片组">新增截面优选通用卡片组</h2>
+<p>新增截面优选通用卡片组，该功能可以在卡片中完成截面优选的全部操作。按数字编号依次操作，即可完成整个工作流。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122180955577.png" alt="image-20231122180955577"></p>
+<h3 id="读取yjk模型数据与分组数据">读取YJK模型数据与分组数据</h3>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122180959041.png" alt="image-20231122180959041"></p>
+<h3 id="获取分组构件">获取分组构件</h3>
+<p>按构件分组名称可获得各分组构件。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181008372.png" alt="image-20231122181008372"></p>
+<h3 id="设置优选参数">设置优选参数</h3>
+<p>参数与界面版相似，可参考界面版中参数的具体说明。截面库与配筋率上下限可通过文字白板进行输入。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181013337.png" alt="image-20231122181013337"></p>
+<h3 id="计算设置与启动优选">计算设置与启动优选</h3>
+<p>可在计算模式计算设置卡片中设置模型计算的参数，双击截面优选优化器后启动优化。</p>
+<h2 id="新增指标调整通用卡片组">新增指标调整通用卡片组</h2>
+<p>新增指标调整通用卡片组，该功能可以在卡片中完成指标调整的全部操作。按数字编号依次操作，即可完成整个工作流。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181018550.png" alt="image-20231122181018550"></p>
+<h3 id="读取yjk模型数据与分组数据-1">读取YJK模型数据与分组数据</h3>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181024914.png" alt="image-20231122181024914"></p>
+<h3 id="获取分组构件-1">获取分组构件</h3>
+<p>类似截面优选通用卡片组，按构件分组名称可获得各分组构件。</p>
+<h3 id="设置候选截面">设置候选截面</h3>
+<p>使用白板输入候选截面库，通过数字滑动条对应截面库与分组变量。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181031987.png" alt="image-20231122181031987"></p>
+<h3 id="yjk模型计算设置">YJK模型计算设置</h3>
+<p>可通过右键计算模式卡片选择YJK计算模式，在计算设置卡片中改变计算设置参数。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181036885.png" alt="image-20231122181036885"></p>
+<h3 id="优化约束及目标设置">优化约束及目标设置</h3>
+<p>在结构指标中选择优化中需要约束的指标，连接设置优化问题约束卡片后选择对指标的约束。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181044635.png" alt="image-20231122181044635"></p>
+<h3 id="连接优化问题定义并启动算法优化">连接优化问题定义并启动算法优化</h3>
+<p>将优化问题定义中的参数，约束和目标连接到对应的卡片上。连接方式可参考之前的参数，约束和目标中的说明。设置完成后，双击优化器后点击启动优化，即可启动算法优化。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181049687.png" alt="image-20231122181049687"></p>
+<h1 id="工程对比">工程对比</h1>
+<p>在【模型和荷载输入】模块下的【数智设计】子菜单下新增“工程对比”功能。对于数智设计的截面优选和指标调整后的模型，使用本功能可以较为方便的对比各个模型之间的区别。点击按钮后即可设置对比的模型及对比参数。</p>
+<h2 id="添加路径">添加路径</h2>
+<p>点击工程对比按钮后弹出的界面中即可选择需要对比的模型路径。可通过“添加模型”按钮和“删除模型”按钮对需要对比的模型进行增删。</p>
+<p>除了点击添加模型按钮增加需要对比的模型，从文件夹中还可以直接拖动模型所在文件夹进模型路径列表中。截面优选或指标调整后的模型，一般都位于同一个文件夹中。同样可以将整个文件夹拖入模型路径列表中，这样文件夹下所有模型，都将出现在模型路径文件夹下。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181055853.png" alt="image-20231122181055853"></p>
+<h2 id="添加构件">添加构件</h2>
+<p>添加构件子菜单下可以选择需要添加的构件类型，在选择构件时，会对选择的构件类型进行筛选。构件的选择有框选，读取分组，根据标准层选择，根据截面表选择等四种选择方式。选择好构件后，可以点击预览按钮，在模型界面中看到标红的构件即为已选择的构件。</p>
+<p>由于选择构件均在标准层下进行操作，计算结果在不同的自然层中不同，选择构件后可以选择要对比的自然层，而不是直接对比构件的每一个自然层的结果。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181100541.png" alt="image-20231122181100541"></p>
+<h2 id="选择结果">选择结果</h2>
+<p>选择结果子菜单下，可以选择不同的结果类型进行查看，选择不同的结果类型，添加后点击对比按钮可同时查看。在使用截面优选或指标调整后使用本功能，点击“高亮不同构件”按钮，可在模型界面中高亮优化后不同截面的构件。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181106305.png" alt="image-20231122181106305"></p>
+<h1 id="截面归并">截面归并</h1>
+<p>在【模型和荷载输入】模块下的【数智设计】子菜单下新增“截面归并”功能。对于数智设计的截面优选和指标调整后的模型，使用本功能可以较为方便的归并由于截面库较细导致的种类过多的构件截面。点击按钮后即可开始设置归并的构件。</p>
+<h2 id="添加自定义归并组">添加自定义归并组</h2>
+<p>点击添加自定义归并组后可选择需要归并的构件。选择构件类别后，可通过工作树，框选，按标准层选择，根据截面表选择等多种方式选择需要归并的构件。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181112726.png" alt="image-20231122181112726"></p>
+<h2 id="导入优化组">导入优化组</h2>
+<p>点击导入优化组按钮，在截面优选或指标调整功能中选择好的构件组将自动添加到需要归并的构件组中。</p>
+<h2 id="选择目标截面">选择目标截面</h2>
+<p>在目标截面中选择需要归并到的截面。如果对相同的截面里不同的构件需要选择不同的目标截面。可以点击详细信息，对不同的构件选择不同的目标截面。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181119909.png" alt="image-20231122181119909"></p>
+<h1 id="荷载加载">荷载加载</h1>
+<h2 id="新增ifc建筑模型系列卡片">新增“IFC”、“建筑模型”系列卡片</h2>
+<p>GAMA画布左侧工具栏新增“IFC”、“建筑模型”系列卡片。可用于读取、预览IFC建筑模型，识别建筑模型中的房间信息、墙体材料、墙体位置等信息，计算整合为结构荷载加载进结构模型中。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181127269.png" alt=""></p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181133069.png" alt="image-20231122181133069"></p>
+<h2 id="ifc荷载继承工作流">IFC荷载继承工作流</h2>
+<blockquote>
+<p>7.2.1 流程总览</p>
+</blockquote>
+<p>步骤一：读取建筑IFC模型</p>
+<p>步骤二：设置并读取荷载定义</p>
+<p>步骤三：荷载加载</p>
+<p>步骤四：合并重叠荷载</p>
+<p>步骤五：生成YJK模型</p>
+<p>卡片连接参考下图：</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181138167.png" alt="image-20231122181138167"></p>
+<blockquote>
+<p><strong>读取IFC模型卡片</strong></p>
+</blockquote>
+<p>配合选择文件路径卡片，可读取IFC模型中的墙体材料、房间功能、实体材料、墙洞材料的位置信息。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181145481.png" alt="image-20231122181145481"></p>
+<blockquote>
+<p><strong>读取荷载定义卡片</strong></p>
+</blockquote>
+<p>点击卡片上的“读取”按钮，GAMA将在当前打开模型的根目录下寻找命名为“<em>模型名称</em>_荷载定义”的表格文件，如果没有找到该文件，GAMA将在模型根目录下创建默认的荷载定义文件。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181149666.png" alt="image-20231122181149666"></p>
+<p>双击卡片可打开目录下的荷载定义文件，修改表格中的值后保存表格文件并关闭文件，重新回到GAMA中读取即可更新荷载定义。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181154258.png" alt="image-20231122181154258"></p>
+<blockquote>
+<p><strong>合并梁IFC荷载</strong></p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181159594.png" alt="image-20231122181159594"></p>
+</blockquote>
+<p>【合并梁IFC荷载】卡片将加荷后的模型中的重叠荷载进行合并。该卡片仅合并由gama加载生成的，以ifc2gama为前缀的荷载。合并后的荷载将保留一位小数，并归并为0.0、0.3 、0.7三个档位。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181205288.png" alt="image-20231122181205288"></p>
+<p>卡片有“全均布荷载”与“非全均布荷载”两种荷载合并方式。当选择<strong>全均布荷载</strong>模式时，梁上的所有原荷载将加和并均摊成为一个均布荷载。当选择<strong>非全均布荷载</strong>时，GAMA将根据梁上原荷载的最左侧与最右侧点生成一个局部梯形荷载。</p>
+<p>下图为“非全均布荷载”时的归并效果：</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181210474.png" alt="image-20231122181210474"></p>
+<h2 id="节点荷载自动施加工作流">节点荷载自动施加工作流</h2>
+<blockquote>
+<p>流程总览：</p>
+</blockquote>
+<p>步骤一：读取当前模型</p>
+<p>步骤二：按顺序选取加荷载的节点</p>
+<p>步骤三：选择Excel表格</p>
+<p>步骤四：设置节点、工况数量</p>
+<p>步骤五：设置工况类型</p>
+<p>步骤六：生成YJK模型</p>
+<p>卡片工作流总览如下图：卡片可在GAMA帮助里面的教程窗口里面找到。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181218262.png" alt=""></p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181225509.png" alt="image-20231122181225509"></p>
+<blockquote>
+<p>读取当前模型</p>
+</blockquote>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181232317.png" alt="image-20231122181232317"></p>
+<blockquote>
+<p>按顺序选取加荷载的节点</p>
+</blockquote>
+<p>通过【点选YJK节点】卡片依次按顺序选择要加载的节点：</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181236683.png" alt="image-20231122181236683"></p>
+<blockquote>
+<p>选择Excel表格</p>
+</blockquote>
+<p>这一步需要选择表格数据，注意表格需要用标准格式，这个格式是根据各个项目统计的一种较为简单的格式，加载前需要先处理成标准格式。表格的标准格式为：第一行为表头； 八列依次为工况、节点号、Fxyz、Mxyz ；不要求工况一定为数字，但工况名称中，不能有下划线和空格；如下所示：</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181241561.png" alt="image-20231122181241561"></p>
+<p>处理好表格后，点击选择文件路径，选择Excel文件，如下所示</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181247850.png" alt="image-20231122181247850"></p>
+<blockquote>
+<p>设置节点、工况数量</p>
+</blockquote>
+<p>这一步是根据荷载表格设置工况数量和节点数量。比如下图所示，总共有3个节点，每个节点4种工况。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181252779.png" alt="image-20231122181252779"></p>
+<blockquote>
+<p>设置工况类型</p>
+</blockquote>
+<p>这一步需要转换工况。</p>
+<p>（1）Excel中工况LIVE1，LIVE2，WX+，Ex程序内部自动按顺序编号为1、2、3、4；</p>
+<p>（2）双击荷载工况转换器，把1~4变为YJK工况 活1、活2、风X+，震X；</p>
+<p>（3）确定输入工况名称是否为自定义工况；</p>
+<p>如下图所示：</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181259334.png" alt=""></p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181327662.png" alt="image-20231122181327662"></p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181332152.png" alt="image-20231122181332152"></p>
+<blockquote>
+<p>生成YJK模型</p>
+</blockquote>
+<p>最后一步，设置新的YJK模型路径，双击生成YJK模型，完成加荷载。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181336882.png" alt="image-20231122181336882"></p>
+<p>上述节点荷载自动施加工作流中的节点选择是人工顺序选择节点，若是已知节点坐标，也可以根据YJK模型的节点坐标自动选取所需的节点进行荷载自动施加工作，节点坐标和卡片总览如下所示：详细操作可在GAMA技术交流群（5群QQ号：717728851）里面沟通咨询。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181351111.png" alt="image-20231122181351111"></p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181355933.png" alt="image-20231122181355933"></p>
+<h1 id="工程拼装">工程拼装</h1>
+<h2 id="工程拼装工作流">工程拼装工作流</h2>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181404416.png" alt="image-20231122181404416"></p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181409852.png" alt="image-20231122181409852"></p>
+<p>Gama新增的【合并模型】卡片可以进行YJK中的【工程拼装】操作，【塔号区分】等同于YJK【工程拼装】中的【楼层表叠加】拼装方式。双击【塔号区分】可改为【塔号合并】，【塔号合并】等同于YJK【工程拼装】中的【合并顶标高相同的标准层】（广义楼层组装）拼装方式。</p>
+<p>工程拼装的实际运用场景多种多样，如下所示：</p>
+<ol>
+<li><p>地库模型+基点坐标已经和地库模型对位的若干单体模型；</p>
+</li>
+<li><p>地库模型+基点坐标在原点的若干单体模型；</p>
+</li>
+<li><p>带地库的单体模型A+带地库的单体模型B（地库接缝拼接）；</p>
+</li>
+<li><p>地库模型+带地库的单体模型（单体周围接缝拼接）；</p>
+</li>
+<li><p>……；</p>
+</li>
+</ol>
+<p>下面只介绍第一种情况的Gama卡片操作流程，后面几种工程拼装场景仅介绍相关卡片，具体操作步骤可以在GAMA技术交流群（5群QQ号：717728851）里面沟通咨询。</p>
+<p>当需要拼装的模型是地库模型和基点坐标已对位的若干单体模型时候，工程拼装的操作是比较简单的。如下图所示：</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181419333.png" alt="image-20231122181419333"></p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181425776.png" alt="image-20231122181425776"></p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181430352.png" alt="image-20231122181430352"></p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181434194.png" alt="image-20231122181434194"></p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181439952.png" alt="image-20231122181439952"></p>
+<p>当所有单体模型的基点坐标和地库模型对位好了之后，依次通过【读取YDB模型】/【读取YJK文件】、【合并模型】和【生成YJK模型】卡片，即可快速拼装整体模型。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181445221.png" alt="image-20231122181445221"></p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181448852.png" alt="image-20231122181448852"></p>
+<p>若地上所有单体结构YJK模型的基点都是原点，那么需要提前将各个单体模型进行平移或者旋转后，再接入【合并模型】卡片。各个单体模型平移的向量或者旋转的角度要预先计算好，平移模型和旋转模型需要用到的Gama卡片如上图所示。</p>
+<p><img src="../file/%E5%8D%87%E7%89%88%E8%AF%B4%E6%98%8E.assets/image-20231122181453589.png" alt="image-20231122181453589"></p>
+<p>若工程拼装场景里面需要接缝拼装时，则需要用到【替换模型构件】卡片，如上图所示。该卡片可以替换指定区域内的模型构件，指定区域后，当前模型内所有构件均被会删除，并替换在此区域内的构件。</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) 非解构数字科技有限公司
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

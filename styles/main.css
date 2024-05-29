@@ -1,0 +1,28 @@
+table {
+    border-left: none!important;
+}
+
+table {
+    border-right: none!important;
+}
+
+td,
+tr,
+th {
+    border: none!important;
+    width: 200px;
+    word-break: normal;
+    word-wrap: break-word；
+}
+
+article h1 {
+    font-size: 32px;
+}
+
+article h2 {
+    font-size: 24px;
+}
+td:first-child {width: 20%}
+td:nth-child(2) {width: 40%}
+td:nth-child(3) {width: 15%}
+td:nth-child(4) {width: 25%}
