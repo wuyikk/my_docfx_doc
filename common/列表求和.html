@@ -79,7 +79,8 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="列表求和">列表求和</h1>
 
-<p>对一个列表的数字进行求和</p>
+<p>对一列数据进行求和，支持的数据类型有：
+数值（小数或整数）、三维点、向量、布尔（布尔的操作逻辑是取“并”）</p>
 <h2 id="输入端inputside">输入端(InputSide)</h2>
 <table>
 <thead>
@@ -93,9 +94,9 @@
 <tbody>
 <tr>
 <td style="text-align: left;">列表</td>
-<td style="text-align: left;">需要求和的数字列表</td>
+<td style="text-align: left;">需要求和的一列数据，可支持的类型详见卡片说明。</td>
 <td style="text-align: left;">列表数据</td>
-<td style="text-align: left;">Double</td>
+<td style="text-align: left;">Object</td>
 </tr>
 </tbody>
 </table>
@@ -111,10 +112,16 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">和</td>
-<td style="text-align: left;">求和的结果</td>
+<td style="text-align: left;">求和结果</td>
+<td style="text-align: left;">求和结果</td>
 <td style="text-align: left;">单个数据</td>
-<td style="text-align: left;">Double</td>
+<td style="text-align: left;">Object</td>
+</tr>
+<tr>
+<td style="text-align: left;">累计相加列表</td>
+<td style="text-align: left;">运算列表</td>
+<td style="text-align: left;">列表数据</td>
+<td style="text-align: left;">Object</td>
 </tr>
 </tbody>
 </table>
@@ -145,7 +152,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Copyright (c) 非解构数字科技有限公司
+            Copyright (c) 上海非解构数字科技有限公司
             
           </div>
         </div>

@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#20889;&#20837;CSV&#25991;&#20214; | GAMA&#21345;&#29255;&#25216;&#26415;&#25991;&#26723; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#20889;&#20837;CSV&#25991;&#20214; | GAMA&#21345;&#29255;&#25216;&#26415;&#25991;&#26723; ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../../Favicon/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="写入csv文件">写入CSV文件</h1>
+
+<p>本卡片的作用是将给定的数据写入指定的csv文件。
+其中，由于csv文件的特性（Command-Seperated Values），请注意不要在需要输出的值中带有英文逗号“,”，否则会导致列错乱；</p>
+<p>如需数据中包含英文逗号，请使用导出Excel格式文件的卡片。</p>
+<p>该卡片中，输入将按照“数据容器中每个容器路径所对应的数据列表作为csv文件中的一列”来排列。
+若上一句造成了您的困扰，请使用任意数据尝试一次即可掌握规律，无需在意功能描述。</p>
+<h2 id="输入端inputside">输入端(InputSide)</h2>
+<p>|名称|描述|数据结构|数据类型|
+|:--|:--|:--|:--|
+|写入内容|需要写入csv的内容|容器数据|Object
+|目标文件路径|需要写入的文件的路径，包含盘符的全路径以及文件名、后缀名。（后缀名缺失则会自动补全为.csv）|单个数据|String
+|CSV文件代码页|写入csv文件时，使用的字符串编码的代码页，默认情况下，该入口不需要赋值，该卡片会自动使用系统默认的代码页。
+目前系统默认的代码页是：936 (简体中文(GB2312))。</p>
+<p>当导出的csv文件产生了与预期不符的情况时，比如导入至其他程序中发生失败时，可以尝试使用下列值来强制按指定编码输出：
+936：普遍的中文编码方式（GBK）
+65001：UTF8编码|单个数据|Int32
+|写入|一个可双击改变值的布尔值入口|单个数据|Boolean</p>
+<h2 id="示例">示例</h2>
+<p>暂无示例文件，待后续补充</p>
+<h2 id="版本">版本</h2>
+<p>4.0</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) 上海非解构数字科技有限公司
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

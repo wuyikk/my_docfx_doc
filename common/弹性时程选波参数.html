@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#24377;&#24615;&#26102;&#31243;&#36873;&#27874;&#21442;&#25968; | GAMA&#21345;&#29255;&#25216;&#26415;&#25991;&#26723; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#24377;&#24615;&#26102;&#31243;&#36873;&#27874;&#21442;&#25968; | GAMA&#21345;&#29255;&#25216;&#26415;&#25991;&#26723; ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../../Favicon/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="弹性时程选波参数">弹性时程选波参数</h1>
+
+<p>生成弹性时程选波参数，用于后续选波。参数含义同YJK弹性时程选波中的反应谱选波参数和地震波组合筛选限制条件，未开放定义的参数取结构设计常规默认值或者根据规范取值。
+请注意检查弹性时程选波参数中的参与振型数。
+该参数需要在YJK模型计算完成反应谱后获得。若后续卡片是“YJK弹性时程分析”，软件会自动修正。</p>
+<h2 id="输入端inputside">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">抗震设防烈度</td>
+<td style="text-align: left;">抗震设防烈度，可使用“抗震设防烈度”卡片输入。GAMA默认会读取模型前处理中设置的抗震设防烈度，若用户输入的值不等于前者，则以用户设置的值为准</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">AntiSeismicIntensity</td>
+</tr>
+<tr>
+<td style="text-align: left;">抗震设防水准</td>
+<td style="text-align: left;">抗震设防水准，可使用“抗震设防水准”卡片输入GAMA默认会读取模型前处理中设置的抗震设防水准，若用户输入的值不等于前者，则以用户设置的值为准</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">YJKSeismicPrecautionaryCriterion</td>
+</tr>
+<tr>
+<td style="text-align: left;">峰值加速度类型</td>
+<td style="text-align: left;">峰值加速度类型:False-PGA True-EPA，GAMA默认设置为PGA</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+<tr>
+<td style="text-align: left;">是否采样线性时程选波</td>
+<td style="text-align: left;">是否使用线性时程选波</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>对于减隔震结构，YJK4.1之前的选波总是采用非线性时程进行选波，速度相对较慢，但精度较高;
+现在(YJK4.1版本之后)选波对话框中的时程选波参数内增加减隔震结构的线性时程选波选项，默认勾选。
+线性时程选波读取上部反应谱计算的振型和各振型阻尼比，采用线性时程进行选波，速度较快，且能兼顾精度，达到一个速度与精度的平衡。|单个数据|Boolean
+|是否考虑周期折减系数|是否考虑周期折减系数</p>
+<p>是否考虑周期折减系数，用于决定选波中的时程计算是否考虑前处理参数中的周期折减系数，对选波中的反应谱结果无影响;
+当后续采用振型叠加法进行时程计算时，因其考虑周期折减系数，故建议勾选;
+后续采用直接积分法进行时程计算时，因其不考虑周期折减系数，故建议不勾选。该值默认为false。|单个数据|Boolean
+|是否减震设计|是否减震设计</p>
+<p>是否减震设计，默认为false，关系到选波程序是否能找到减震子模型的有限元数据;|单个数据|Boolean
+|是否隔震设计|是否隔震设计</p>
+<p>是否隔震设计，默认为false,关系到选波程序是否能找到隔震子模型的有限元数据;|单个数据|Boolean
+|隔震设计方法|隔震设计方法- 例 False-分布设计：250801 True-直接设计：250802，默认为直接设计法：250802|单个数据|Boolean
+|地震波有效持续时间是否不小于5倍基本周期|地震波有效持续时间是否不小于5倍基本周期</p>
+<p>地震波有效持续时间不小于5倍基本周期，默认为false;|单个数据|Boolean
+|考虑地震波有效持续时间是否大于15s|考虑地震波有效持续时间是否大于15s</p>
+<p>地震波有效持续时间大于15s，默认为false;|单个数据|Boolean
+|平台平均值是否与第一周期邻域平均值筛选|平台平均值是否与第一周期邻域平均值筛选</p>
+<p>平台平均值是否与第一周期邻域平均值筛选，参数意义同YJK，默认为false;|单个数据|Boolean
+|是否考虑自定义周期的平均反应谱|是否考虑自定义周期的平均反应谱</p>
+<p>是否考虑自定义周期的平均反应谱，参数意义同YJK，默认为false;|单个数据|Boolean
+|周期阶数|考虑周期序列的平均反应谱值-输入周期阶数，不超过10个周期个数|列表数据|Int32
+|周期数值|考虑自定义周期值的平均反应谱值-输入周期数值，不超过10个周期数值|列表数据|Single</p>
+<h2 id="输出端outputside">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">预览弹性时程选波参数</td>
+<td style="text-align: left;">预览弹性时程选波参数，包含未开放参数的定义。</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">String</td>
+</tr>
+<tr>
+<td style="text-align: left;">弹性时程选波参数</td>
+<td style="text-align: left;">弹性时程选波参数，用于后续选波</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">AutoFilterWaveParams</td>
+</tr>
+</tbody>
+</table>
+<h2 id="示例">示例</h2>
+<p>暂无示例文件，待后续补充</p>
+<h2 id="版本">版本</h2>
+<p>4.0</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) 上海非解构数字科技有限公司
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

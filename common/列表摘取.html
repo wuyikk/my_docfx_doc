@@ -79,7 +79,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="列表摘取">列表摘取</h1>
 
-<p>输入一个区间，提取列表在该区间中的索引项</p>
+<p>输入一个区间，提取列表在该区间中的索引项。起始索引比终止索引大的情况下，结果列表会反转。</p>
 <h2 id="输入端inputside">输入端(InputSide)</h2>
 <table>
 <thead>
@@ -111,7 +111,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">允许越界</td>
-<td style="text-align: left;">Boolean类型，其值为True或者False</td>
+<td style="text-align: left;">如果允许越界，则超出列表的索引范围的索引会被自动被投影至索引范围内，比如: -1会成为列表的最后一项</td>
 <td style="text-align: left;">单个数据</td>
 <td style="text-align: left;">Boolean</td>
 </tr>
@@ -130,7 +130,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;">列表</td>
-<td style="text-align: left;">可以装载任意数据（object）</td>
+<td style="text-align: left;">结果列表。起始索引比终止索引大的情况下，结果列表会反转。</td>
 <td style="text-align: left;">列表数据</td>
 <td style="text-align: left;">Object</td>
 </tr>
@@ -163,7 +163,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Copyright (c) 非解构数字科技有限公司
+            Copyright (c) 上海非解构数字科技有限公司
             
           </div>
         </div>

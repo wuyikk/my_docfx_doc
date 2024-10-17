@@ -79,7 +79,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="读取excel">读取Excel</h1>
 
-<p>逐列读取Excel</p>
+<p>逐列读取Excel，若表格上方若干行都是空，则跳过所有空行</p>
 <h2 id="输入端inputside">输入端(InputSide)</h2>
 <table>
 <thead>
@@ -99,13 +99,13 @@
 </tr>
 <tr>
 <td style="text-align: left;">行数</td>
-<td style="text-align: left;">行数</td>
+<td style="text-align: left;">从Eecel中可读取的总行数，从0行开始，默认为int.MaxValue</td>
 <td style="text-align: left;">单个数据</td>
 <td style="text-align: left;">Int32</td>
 </tr>
 <tr>
 <td style="text-align: left;">列数</td>
-<td style="text-align: left;">列数</td>
+<td style="text-align: left;">从Eecel中可读取的总列数，从0列开始，默认为int.MaxValue</td>
 <td style="text-align: left;">单个数据</td>
 <td style="text-align: left;">Int32</td>
 </tr>
@@ -158,7 +158,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Copyright (c) 非解构数字科技有限公司
+            Copyright (c) 上海非解构数字科技有限公司
             
           </div>
         </div>

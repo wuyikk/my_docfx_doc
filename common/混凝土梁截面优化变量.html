@@ -111,73 +111,79 @@
 </tr>
 <tr>
 <td style="text-align: left;">顶配筋率上限</td>
-<td style="text-align: left;">顶配筋率上限</td>
+<td style="text-align: left;">顶配筋率上限(值在0到1之间)</td>
 <td style="text-align: left;">单个数据</td>
 <td style="text-align: left;">Double</td>
 </tr>
 <tr>
 <td style="text-align: left;">顶配筋率下限</td>
-<td style="text-align: left;">顶配筋率下限</td>
+<td style="text-align: left;">顶配筋率下限(值在0到1之间)</td>
 <td style="text-align: left;">单个数据</td>
 <td style="text-align: left;">Double</td>
 </tr>
 <tr>
 <td style="text-align: left;">底配筋率上限</td>
-<td style="text-align: left;">底配筋率上限</td>
+<td style="text-align: left;">底配筋率上限(值在0到1之间)</td>
 <td style="text-align: left;">单个数据</td>
 <td style="text-align: left;">Double</td>
 </tr>
 <tr>
 <td style="text-align: left;">底配筋率下限</td>
-<td style="text-align: left;">底配筋率下限</td>
+<td style="text-align: left;">底配筋率下限(值在0到1之间)</td>
 <td style="text-align: left;">单个数据</td>
 <td style="text-align: left;">Double</td>
 </tr>
 <tr>
 <td style="text-align: left;">只调超限构件</td>
-<td style="text-align: left;">一个可双击改变值的布尔值入口</td>
+<td style="text-align: left;">一个使用复选框来改变布尔值的入口</td>
 <td style="text-align: left;">单个数据</td>
 <td style="text-align: left;">Boolean</td>
 </tr>
 <tr>
-<td style="text-align: left;">梁截面一致</td>
-<td style="text-align: left;">一个可双击改变值的布尔值入口</td>
+<td style="text-align: left;">组内构件统一截面</td>
+<td style="text-align: left;">一个使用复选框来改变布尔值的入口</td>
 <td style="text-align: left;">单个数据</td>
 <td style="text-align: left;">Boolean</td>
 </tr>
 <tr>
 <td style="text-align: left;">考虑成本</td>
-<td style="text-align: left;">一个可双击改变值的布尔值入口</td>
+<td style="text-align: left;">一个使用复选框来改变布尔值的入口</td>
 <td style="text-align: left;">单个数据</td>
 <td style="text-align: left;">Boolean</td>
 </tr>
 <tr>
-<td style="text-align: left;">主梁高于次梁</td>
-<td style="text-align: left;">一个可双击改变值的布尔值入口</td>
+<td style="text-align: left;">次梁高不大于主梁高</td>
+<td style="text-align: left;">一个使用复选框来改变布尔值的入口</td>
 <td style="text-align: left;">单个数据</td>
 <td style="text-align: left;">Boolean</td>
 </tr>
 <tr>
-<td style="text-align: left;">主次梁高差</td>
-<td style="text-align: left;">次梁高不大于主梁高-【高差】</td>
+<td style="text-align: left;">主次梁高差(mm)</td>
+<td style="text-align: left;">次梁高不大于主梁高 -【高差(mm)】</td>
 <td style="text-align: left;">单个数据</td>
 <td style="text-align: left;">Double</td>
 </tr>
 <tr>
-<td style="text-align: left;">连续梁统一</td>
+<td style="text-align: left;">连续梁</td>
 <td style="text-align: left;">连续梁截面统一或者同宽: 0-不考虑，1-截面统一，2-宽度统一</td>
 <td style="text-align: left;">单个数据</td>
 <td style="text-align: left;">Int32</td>
 </tr>
 <tr>
+<td style="text-align: left;">梁宽不大于柱宽</td>
+<td style="text-align: left;">一个使用复选框来改变布尔值的入口</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+<tr>
 <td style="text-align: left;">与墙同宽梁宽保持一致</td>
-<td style="text-align: left;">一个可双击改变值的布尔值入口</td>
+<td style="text-align: left;">一个使用复选框来改变布尔值的入口</td>
 <td style="text-align: left;">单个数据</td>
 <td style="text-align: left;">Boolean</td>
 </tr>
 <tr>
 <td style="text-align: left;">与墙不同宽的梁不超过墙厚</td>
-<td style="text-align: left;">一个可双击改变值的布尔值入口</td>
+<td style="text-align: left;">一个使用复选框来改变布尔值的入口</td>
 <td style="text-align: left;">单个数据</td>
 <td style="text-align: left;">Boolean</td>
 </tr>
@@ -188,13 +194,31 @@
 <td style="text-align: left;">Int32</td>
 </tr>
 <tr>
-<td style="text-align: left;">预测时荷载组合设置</td>
-<td style="text-align: left;">一个可双击改变值的布尔值入口</td>
+<td style="text-align: left;">钢筋排数不大于两排</td>
+<td style="text-align: left;">一个使用复选框来改变布尔值的入口</td>
 <td style="text-align: left;">单个数据</td>
 <td style="text-align: left;">Boolean</td>
 </tr>
 <tr>
-<td style="text-align: left;">构件分组名称</td>
+<td style="text-align: left;">裂缝限值(mm)</td>
+<td style="text-align: left;">默认为0不考虑</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">满足挠度限值</td>
+<td style="text-align: left;">一个使用复选框来改变布尔值的入口</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+<tr>
+<td style="text-align: left;">预测时荷载组合</td>
+<td style="text-align: left;">预测时验算荷载组合设置</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+<tr>
+<td style="text-align: left;">分组名称</td>
 <td style="text-align: left;">一张参数卡片即为一个构件分组，可在本入口处对构件分组进行命名</td>
 <td style="text-align: left;">单个数据</td>
 <td style="text-align: left;">String</td>
@@ -222,8 +246,6 @@
 </table>
 <h2 id="示例">示例</h2>
 <p>可参考高级截面优选卡片组</p>
-<h2 id="版本">版本</h2>
-<p>3.0</p>
 </article>
           </div>
           
@@ -249,7 +271,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Copyright (c) 非解构数字科技有限公司
+            Copyright (c) 上海非解构数字科技有限公司
             
           </div>
         </div>

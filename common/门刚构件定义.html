@@ -1,0 +1,361 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>(&#29305;&#27530;&#26500;&#20214;-Beam) | GAMA&#21345;&#29255;&#25216;&#26415;&#25991;&#26723; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="(&#29305;&#27530;&#26500;&#20214;-Beam) | GAMA&#21345;&#29255;&#25216;&#26415;&#25991;&#26723; ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../../Favicon/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="特殊构件-beam">(特殊构件-Beam)</h1>
+
+<p>定义二维门刚构件扩展属性。</p>
+<h2 id="输入端inputside">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">加劲肋间距(mm)</td>
+<td style="text-align: left;">横向加劲肋间距a/Hw: -1 不设置加劲肋 , 1.0 , 1.5 , 2.0 , 3.0</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">门刚构件属性</td>
+<td style="text-align: left;">普通柱  1,抗风柱  2,女儿墙柱  3,夹层柱  4,与牛腿相连的柱  5,天窗挡风板的柱  6,普通梁  7,夹层梁  8,挑檐  9,普通撑  10,天窗  11,天窗挑檐  12,雨棚  13</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">平面内计算长度系数</td>
+<td style="text-align: left;">1.长度值小于或小于0时，表示面内计算长度又程序自动计算 ,2.创建杆件时，该系数程序默认 -1</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">平面外计算长度(mm)</td>
+<td style="text-align: left;">1.长度值小于或小于0时，表示面外计算长度又程序自动计算 ,2.创建杆件时，该长度程序默认为杆件实际长度的负值</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">升温（°）</td>
+<td style="text-align: left;">设置一个大于0的数字 单位摄氏度</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">降温（°）</td>
+<td style="text-align: left;">设置一个小于0的数字 单位摄氏度</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">门刚梁</td>
+<td style="text-align: left;">补充定义</td>
+<td style="text-align: left;">获取门刚构件的定义</td>
+<td style="text-align: left;">单个数据</td>
+<td>NSPortalFrameExtension</td>
+</tr>
+</tbody>
+</table>
+<h1 id="特殊构件-column">(特殊构件-Column)</h1>
+<p>定义二维门刚构件扩展属性。</p>
+<h2 id="输入端inputside-1">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">相对刚架平面的偏心(mm)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">是否承担水平力</td>
+<td style="text-align: left;">1不承担竖向力 仅承担水平力 , 0 既承担竖向力 又承担水平力</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">起点滑动时最大位移差(mm)</td>
+<td style="text-align: left;">起点滑动时最大位移差 单位 mm</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">终点滑动时最大位移差(mm)</td>
+<td style="text-align: left;">终点滑动时最大位移差 单位 mm</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">加劲肋间距(mm)</td>
+<td style="text-align: left;">横向加劲肋间距a/Hw: -1 不设置加劲肋 , 1.0 , 1.5 , 2.0 , 3.0</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">门刚构件属性</td>
+<td style="text-align: left;">普通柱  1,抗风柱  2,女儿墙柱  3,夹层柱  4,与牛腿相连的柱  5,天窗挡风板的柱  6,普通梁  7,夹层梁  8,挑檐  9,普通撑  10,天窗  11,天窗挑檐  12,雨棚  13</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">平面内计算长度系数</td>
+<td style="text-align: left;">1.长度值小于或小于0时，表示面内计算长度又程序自动计算 ,2.创建杆件时，该系数程序默认 -1</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">平面外计算长度(mm)</td>
+<td style="text-align: left;">1.长度值小于或小于0时，表示面外计算长度又程序自动计算 ,2.创建杆件时，该长度程序默认为杆件实际长度的负值</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">升温（°）</td>
+<td style="text-align: left;">设置一个大于0的数字 单位摄氏度</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">降温（°）</td>
+<td style="text-align: left;">设置一个小于0的数字 单位摄氏度</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-1">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">门刚柱</td>
+<td style="text-align: left;">补充定义</td>
+<td style="text-align: left;">获取门刚构件的定义</td>
+<td style="text-align: left;">单个数据</td>
+<td>NSPortalFrameExtension</td>
+</tr>
+</tbody>
+</table>
+<h1 id="特殊构件-brace">(特殊构件-Brace)</h1>
+<p>定义二维门刚构件扩展属性。</p>
+<h2 id="输入端inputside-2">输入端(InputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">加劲肋间距(mm)</td>
+<td style="text-align: left;">横向加劲肋间距a/Hw: -1 不设置加劲肋 , 1.0 , 1.5 , 2.0 , 3.0</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">门刚构件属性</td>
+<td style="text-align: left;">普通柱  1,抗风柱  2,女儿墙柱  3,夹层柱  4,与牛腿相连的柱  5,天窗挡风板的柱  6,普通梁  7,夹层梁  8,挑檐  9,普通撑  10,天窗  11,天窗挑檐  12,雨棚  13</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">平面内计算长度系数</td>
+<td style="text-align: left;">1.长度值小于或小于0时，表示面内计算长度又程序自动计算 ,2.创建杆件时，该系数程序默认 -1</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">平面外计算长度(mm)</td>
+<td style="text-align: left;">1.长度值小于或小于0时，表示面外计算长度又程序自动计算 ,2.创建杆件时，该长度程序默认为杆件实际长度的负值</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">升温（°）</td>
+<td style="text-align: left;">设置一个大于0的数字 单位摄氏度</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">降温（°）</td>
+<td style="text-align: left;">设置一个小于0的数字 单位摄氏度</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+</tbody>
+</table>
+<h2 id="输出端outputside-2">输出端(OutputSide)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">数据结构</th>
+<th style="text-align: left;">数据类型</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">门刚斜撑</td>
+<td style="text-align: left;">补充定义</td>
+<td style="text-align: left;">获取门刚构件的定义</td>
+<td style="text-align: left;">单个数据</td>
+<td>NSPortalFrameExtension</td>
+</tr>
+</tbody>
+</table>
+<h2 id="示例">示例</h2>
+<p>暂无示例文件，待后续补充</p>
+<h2 id="版本">版本</h2>
+<p>4.0</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) 上海非解构数字科技有限公司
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

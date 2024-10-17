@@ -79,10 +79,14 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="yjk计算模式">YJK计算模式</h1>
 
-<p>计算：只计算结构整体指标</p>
-<p>计算设计：计算结构指标和构件指标</p>
-<p>计算设计工程量：计算结构指标，构件指标，统计工程量（不包含钢筋工程量）</p>
-<p>计算设计工程量施工图：计算设计工程量：计算结构指标，构件指标，统计工程量（包含钢筋工程量）</p>
+<p>选择合适的计算模式可以加快YJK计算的效率。以下模式中，单次YJK计算的耗时递增:</p>
+<ul>
+<li>计算：只计算结构整体指标 (无构件设计、无构件指标，不统计工程量，耗时最短)</li>
+<li>计算设计：计算结构指标和构件指标 (不统计工程量)</li>
+<li>计算设计工程量：计算结构指标、构件指标，并统计工程量 (不包含钢筋工程量)</li>
+<li>计算设计工程量施工图：计算结构指标、构件指标、并统计包含钢筋的工程量 (需绘制施工图，耗时最长)</li>
+</ul>
+<p>通过点击本卡片蓝色条纹部分可设置输出的计算模式。</p>
 <h2 id="输出端outputside">输出端(OutputSide)</h2>
 <table>
 <thead>
@@ -96,12 +100,19 @@
 <tbody>
 <tr>
 <td style="text-align: left;">计算模式</td>
+<td style="text-align: left;">选择合适的计算模式可以加快YJK计算的效率。以下模式中，单次YJK计算的耗时递增:</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;">单个数据</td>
-<td style="text-align: left;">CalculateMode</td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
+<ul>
+<li>计算：只计算结构整体指标 (无构件设计、无构件指标，不统计工程量，耗时最短)</li>
+<li>计算设计：计算结构指标和构件指标 (不统计工程量)</li>
+<li>计算设计工程量：计算结构指标、构件指标，并统计工程量 (不包含钢筋工程量)</li>
+<li>计算设计工程量施工图：计算结构指标、构件指标、并统计包含钢筋的工程量 (需绘制施工图，耗时最长)</li>
+</ul>
+<p>通过点击本卡片蓝色条纹部分可设置输出的计算模式。|单个数据|CalculateMode</p>
 <h2 id="示例">示例</h2>
 <p><img src="../file/YJK%E8%AE%A1%E7%AE%97%E6%A8%A1%E5%BC%8F_01.png" alt="示例文件:YJK计算模式_01.png"></p>
 </article>
@@ -129,7 +140,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Copyright (c) 非解构数字科技有限公司
+            Copyright (c) 上海非解构数字科技有限公司
             
           </div>
         </div>

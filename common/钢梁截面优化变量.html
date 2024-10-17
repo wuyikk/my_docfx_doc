@@ -129,25 +129,25 @@
 </tr>
 <tr>
 <td style="text-align: left;">只调超限构件</td>
-<td style="text-align: left;">一个可双击改变值的布尔值入口</td>
+<td style="text-align: left;">一个使用复选框来改变布尔值的入口</td>
 <td style="text-align: left;">单个数据</td>
 <td style="text-align: left;">Boolean</td>
 </tr>
 <tr>
-<td style="text-align: left;">梁截面一致</td>
-<td style="text-align: left;">一个可双击改变值的布尔值入口</td>
+<td style="text-align: left;">组内构件统一截面</td>
+<td style="text-align: left;">一个使用复选框来改变布尔值的入口</td>
 <td style="text-align: left;">单个数据</td>
 <td style="text-align: left;">Boolean</td>
 </tr>
 <tr>
 <td style="text-align: left;">考虑成本</td>
-<td style="text-align: left;">一个可双击改变值的布尔值入口</td>
+<td style="text-align: left;">一个使用复选框来改变布尔值的入口</td>
 <td style="text-align: left;">单个数据</td>
 <td style="text-align: left;">Boolean</td>
 </tr>
 <tr>
-<td style="text-align: left;">主梁高于次梁</td>
-<td style="text-align: left;">一个可双击改变值的布尔值入口</td>
+<td style="text-align: left;">次梁高不大于主梁高</td>
+<td style="text-align: left;">一个使用复选框来改变布尔值的入口</td>
 <td style="text-align: left;">单个数据</td>
 <td style="text-align: left;">Boolean</td>
 </tr>
@@ -158,26 +158,44 @@
 <td style="text-align: left;">Double</td>
 </tr>
 <tr>
-<td style="text-align: left;">连续梁统一</td>
+<td style="text-align: left;">连续梁</td>
 <td style="text-align: left;">连续梁截面统一或者同宽: 0-不考虑，1-截面统一，2-宽度统一</td>
 <td style="text-align: left;">单个数据</td>
 <td style="text-align: left;">Int32</td>
 </tr>
 <tr>
+<td style="text-align: left;">梁宽不大于柱宽</td>
+<td style="text-align: left;">一个使用复选框来改变布尔值的入口</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+<tr>
 <td style="text-align: left;">满足宽厚比</td>
-<td style="text-align: left;">一个可双击改变值的布尔值入口</td>
+<td style="text-align: left;">一个使用复选框来改变布尔值的入口</td>
 <td style="text-align: left;">单个数据</td>
 <td style="text-align: left;">Boolean</td>
 </tr>
 <tr>
 <td style="text-align: left;">满足高厚比</td>
-<td style="text-align: left;">一个可双击改变值的布尔值入口</td>
+<td style="text-align: left;">一个使用复选框来改变布尔值的入口</td>
 <td style="text-align: left;">单个数据</td>
 <td style="text-align: left;">Boolean</td>
 </tr>
 <tr>
-<td style="text-align: left;">预测时荷载组合设置</td>
-<td style="text-align: left;">一个可双击改变值的布尔值入口</td>
+<td style="text-align: left;">梁跨内变截面梁与相邻梁截面同厚</td>
+<td style="text-align: left;">一个使用复选框来改变布尔值的入口</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Boolean</td>
+</tr>
+<tr>
+<td style="text-align: left;">挠度限值(百分比分母)</td>
+<td style="text-align: left;">验算准永久组合挠度，填入百分比的分母，默认为0不考虑</td>
+<td style="text-align: left;">单个数据</td>
+<td style="text-align: left;">Double</td>
+</tr>
+<tr>
+<td style="text-align: left;">预测时荷载组合</td>
+<td style="text-align: left;">预测时验算荷载组合设置</td>
 <td style="text-align: left;">单个数据</td>
 <td style="text-align: left;">Boolean</td>
 </tr>
@@ -210,8 +228,6 @@
 </table>
 <h2 id="示例">示例</h2>
 <p>可参考高级截面优选卡片组</p>
-<h2 id="版本">版本</h2>
-<p>3.0</p>
 </article>
           </div>
           
@@ -237,7 +253,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Copyright (c) 非解构数字科技有限公司
+            Copyright (c) 上海非解构数字科技有限公司
             
           </div>
         </div>

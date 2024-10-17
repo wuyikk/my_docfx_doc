@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>&#25130;&#38754;&#20248;&#36873;&#24120;&#35265;&#38382;&#39064; | GAMA&#21345;&#29255;&#25216;&#26415;&#25991;&#26723; </title>
+    <title>&#25130;&#38754;&#20248;&#21270;&#24120;&#35265;&#38382;&#39064; | GAMA&#21345;&#29255;&#25216;&#26415;&#25991;&#26723; </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="&#25130;&#38754;&#20248;&#36873;&#24120;&#35265;&#38382;&#39064; | GAMA&#21345;&#29255;&#25216;&#26415;&#25991;&#26723; ">
+    <meta name="title" content="&#25130;&#38754;&#20248;&#21270;&#24120;&#35265;&#38382;&#39064; | GAMA&#21345;&#29255;&#25216;&#26415;&#25991;&#26723; ">
     <meta name="generator" content="docfx 2.59.0.0">
     
     <link rel="shortcut icon" href="../../Favicon/favicon.ico">
@@ -77,22 +77,22 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="截面优选常见问题"><strong>截面优选常见问题</strong></h1>
+<h1 id="截面优化常见问题"><strong>截面优化常见问题</strong></h1>
 
-<h2 id="1-什么是截面优选"><strong>1.</strong> <strong>什么是截面优选？</strong></h2>
-<p><strong>截面优选含义</strong>：通过选择多组需要被调整的构件，并设定每组的<strong>构件目标（配筋率范围、应力比限值等）</strong>、设定每组的候选截面，最后启动计算。软件会自动迭代计算直至满足<strong>目标</strong>，并同时调整构件指标为无超限。可以理解为满应力设计法。</p>
+<h2 id="1-什么是截面优化"><strong>1.</strong> <strong>什么是截面优化？</strong></h2>
+<p><strong>截面优化含义</strong>：通过选择多组需要被调整的构件，并设定每组的<strong>构件目标（配筋率范围、应力比限值等）</strong>、设定每组的候选截面，最后启动计算。软件会自动迭代计算直至满足<strong>目标</strong>，并同时调整构件指标为无超限。可以理解为满应力设计法。</p>
 <p><strong>具体计算过程为</strong>：每次迭代，根据上一次计算结果的内力推算一个候选截面，从候选截面库中挑选一个最接近的截面带入，直至满足。注意如果初始构件本身满足目标（配筋率、应力比要求），则不会进行调整。在迭代过程中同时会调整构件指标为没有超限。</p>
 <p><strong>注意事项</strong>：</p>
-<p><strong>①</strong>截面优选目标是构件指标（<strong>应力比、配筋率</strong>），因此<strong>不会控制结构大指标</strong>（如周期比、位移比等）。但可以在“记录项”中记录结构指标变化。</p>
-<p><strong>②</strong>截面优选默认每跨一个截面，即寻找<strong>单跨最优解</strong>；若需要某一组为一个截面，可以勾选对应选项“<img src="../file/questions/wps25.jpg" alt="img">”。</p>
-<h2 id="2-截面优选使用场景"><strong>2.</strong> <strong>截面优选使用场景？</strong></h2>
+<p><strong>①</strong>截面优化目标是构件指标（<strong>应力比、配筋率</strong>），因此<strong>不会控制结构大指标</strong>（如周期比、位移比等）。但可以在“记录项”中记录结构指标变化。</p>
+<p><strong>②</strong>截面优化默认每跨一个截面，即寻找<strong>单跨最优解</strong>；若需要某一组为一个截面，可以勾选对应选项“<img src="../file/questions/wps25.jpg" alt="img">”。</p>
+<h2 id="2-截面优化使用场景"><strong>2.</strong> <strong>截面优化使用场景？</strong></h2>
 <p><strong>使用场景1</strong>：仅对非抗侧力构件进行调整，可同时添加多组被调整的截面，每组赋予不同的候选截面及应力比、配筋率目标。</p>
 <p><strong>使用场景2</strong>：同时针对抗侧力及非抗侧力构件调整，并在“记录项”中记录工程量、位移等指标变化过程。</p>
-<h2 id="3-截面优选注意事项"><strong>3.</strong> <strong>截面优选注意事项</strong></h2>
-<p>(1) 截面优选会根据目标(应力比、配筋率)寻找单跨最优解，因此同一组内截面各不一致，但可以勾选“组内截面保持一致”选项，保证一组为一个截面。但算法优化始终保证组内截面保持一致。</p>
-<p>(2) 截面优选适用构件级别的调整，不控制结构指标，仅做记录。但算法优化通常用于结构指标调整。</p>
-<p>(3) 注意，体量较大的模型不建议使用并行计算。可以通过计算模型文件里面的【yjk_log.txt】文件判断该模型是否适合并行计算，正常的【yjk_log.txt】文件如下所示。若是YJK结构模型使用并行计算后截面优选失败，该文件里面会有【程序崩溃】的字样，建议针对于这样的模型，不勾选【使用并行计算】。</p>
-<p><img src="../file/questions/yjk_log.jpg" alt="yjk_log"></p>
+<h2 id="3-截面优化注意事项"><strong>3.</strong> <strong>截面优化注意事项</strong></h2>
+<p>(1) 截面优化会根据目标(应力比、配筋率)寻找单跨最优解，因此同一组内截面各不一致，但可以勾选“组内截面保持一致”选项，保证一组为一个截面。但算法优化始终保证组内截面保持一致。</p>
+<p>(2) 截面优化适用构件级别的调整，不控制结构指标，仅做记录。但算法优化通常用于结构指标调整。</p>
+<p>(3) 注意，体量较大的模型不建议使用并行计算。可以通过计算模型文件里面的【yjk_log.txt】文件判断该模型是否适合并行计算，正常的【yjk_log.txt】文件如下所示。若是YJK结构模型使用并行计算后截面优化失败，该文件里面会有【程序崩溃】的字样，建议针对于这样的模型，不勾选【使用并行计算】。</p>
+<p><img src="../file/questions%5Cyjk_log.jpg" alt="yjk_log"></p>
 <h1 id="附录部分案例"><strong>附录：部分案例</strong></h1>
 <p>1.（<a href="https://mp.weixin.qq.com/s/QAY40-n11rQf3lxUhbXNRA"><strong>把体力活交给电脑，Y-GAMA轻松完成超高层竖向构件初步设计</strong></a>）</p>
 <p>2.（<a href="https://mp.weixin.qq.com/s/Nldq3QYTcsC58mkl8WA6mg"><strong>让电脑白加黑，Y-GAMA轻松完成超大地库超限调整</strong></a>）</p>
@@ -121,7 +121,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Copyright (c) 非解构数字科技有限公司
+            Copyright (c) 上海非解构数字科技有限公司
             
           </div>
         </div>

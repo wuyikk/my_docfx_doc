@@ -93,30 +93,21 @@
 <tbody>
 <tr>
 <td style="text-align: left;">计算模式</td>
-<td style="text-align: left;">计算：只计算结构整体指标,计算设计：计算结构指标和构件指标,计算设计工程量：计算结构指标，构件指标，统计工程量（不包含钢筋工程量）,计算设计工程量施工图：计算设计工程量：计算结构指标，构件指标，统计工程量（包含钢筋工程量）</td>
-<td style="text-align: left;">单个数据</td>
-<td style="text-align: left;">CalculateMode</td>
-</tr>
-<tr>
-<td style="text-align: left;">是否只生成梁施工图</td>
-<td style="text-align: left;">统计工程量（包含钢筋工程量）时，是否只生成梁施工图</td>
-<td style="text-align: left;">单个数据</td>
-<td style="text-align: left;">Boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">是否跳过楼板配筋计算</td>
-<td style="text-align: left;">统计工程量（包含钢筋工程量）时，是否跳过楼板施工图生成</td>
-<td style="text-align: left;">单个数据</td>
-<td style="text-align: left;">Boolean</td>
-</tr>
-<tr>
-<td style="text-align: left;">全楼生成组合梁</td>
-<td style="text-align: left;">选择生成时，默认保留已有组合梁数据 &amp; 仅按次梁生成组合梁</td>
-<td style="text-align: left;">单个数据</td>
-<td style="text-align: left;">Boolean</td>
+<td style="text-align: left;">选择合适的计算模式可以加快YJK计算的效率。以下模式中，单次YJK计算的耗时递增:</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
+<ul>
+<li>计算：只计算结构整体指标 (无构件设计、无构件指标，不统计工程量，耗时最短)</li>
+<li>计算设计：计算结构指标和构件指标 (不统计工程量)</li>
+<li>计算设计工程量：计算结构指标、构件指标，并统计工程量 (不包含钢筋工程量)</li>
+<li>计算设计工程量施工图：计算结构指标、构件指标、并统计包含钢筋的工程量 (需绘制施工图，耗时最长)|单个数据|CalculateMode
+|取消勾选时，只生成梁施工图|统计工程量（包含钢筋工程量）时，若不勾选该选项，则只生成梁施工图|单个数据|Boolean
+|取消勾选时，不计算楼板的配筋|统计工程量（包含钢筋工程量）时，若不勾选该选项，则会跳过楼板施工图生成|单个数据|Boolean
+|取消勾选时，不生成组合梁|勾选本选项时，默认保留已有组合梁数据，且仅按次梁生成组合梁|单个数据|Boolean</li>
+</ul>
 <h2 id="输出端outputside">输出端(OutputSide)</h2>
 <table>
 <thead>
@@ -130,7 +121,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;">计算设置</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">计算设置的参数，用于“计算YJK模型”的入口</td>
 <td style="text-align: left;">单个数据</td>
 <td style="text-align: left;">YJKRunnerParam</td>
 </tr>
@@ -164,7 +155,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Copyright (c) 非解构数字科技有限公司
+            Copyright (c) 上海非解构数字科技有限公司
             
           </div>
         </div>
